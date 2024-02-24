@@ -1,0 +1,131 @@
+/* about
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-about {
+    position: relative;
+    padding: rem(80) 0 rem(112);
+    background-color: $color-background;
+
+    @include responsive(md) {
+        background: #fff;
+        padding: rem(152) 0 rem(270);
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 8rem;
+        transform: translate(-50%, 0%);
+        background-color: #fff;
+        content: "";
+
+        @include responsive(lg2) {
+            right: 0;
+            background-color: $color-background;
+            width: 50%;
+            height: rem(534);
+            transform: translate(0%, 0%);
+        }
+    }
+
+    &__desc {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        @include responsive(md) {
+            @include flex(space-between, flex-start, row);
+            padding: 0 rem(80);
+        }
+        .c-link__wrap {
+            margin-top: rem(32);
+            position: relative;
+        }
+    }
+
+    figure {
+        @include responsive(md) {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+    &__img {
+        @include responsive(md) {
+            width: 57.7%;
+            margin: 0;
+            position: relative;
+        }
+    }
+
+    &__container {
+        padding: rem(106) rem(20) 0;
+        // margin-top: rem(64);
+
+        @include responsive(md) {
+            width: 34.6%;
+            padding: 0;
+        }
+
+        @include responsive(lg2) {
+            margin-top: 0;
+        }
+    }
+
+    // &__title {
+    //     padding: 0 0 0 rem(20);
+    //     position: relative;
+    // }
+
+    // &__title--en {
+    //     color: $color-text;
+    //     font-family: $font-family-en;
+    //     @include font(42, 47, 600, 0, rem);
+
+    //     @include responsive(md) {
+    //         @include font(64, 72, 600, 0, rem);
+    //     }
+    // }
+
+    // &__title--en::before {
+    //     content: "";
+    //     display: block;
+    //     width: rem(8);
+    //     height: rem(8);
+    //     background: #88b999;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     top: rem(8);
+    //     left: 0;
+    // }
+
+    // &__title--ja {
+    //     color: #88b999;
+    //     font-family: $font-family-base;
+    //     @include font(14, 20, 500, 150, rem);
+
+    //     @include responsive(md) {
+    //         @include font(16, 14, 500, 150, rem);
+    //     }
+    // }
+
+    &__descWrapper {
+        margin-top: rem(34);
+
+        @include responsive(md) {
+            position: relative;
+        }
+
+        @include responsive(lg2) {
+            margin-top: rem(43);
+        }
+    }
+
+    &__descText {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 28, 400, 150, rem);
+    }
+}

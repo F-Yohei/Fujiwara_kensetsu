@@ -1,0 +1,108 @@
+<% let path = jsonData.pages[pageId].path %>
+<!-- header -->
+<header id="js-header" class="l-header">
+  <div class="l-header__inner">
+    <!-- header-logo -->
+    <h1 class="l-header__logo">
+      <a href="<%= path %>" class="l-header__logoLink">
+        <img src="<%= path %>assets/images/common/header_logo.svg" alt="ロゴ" />
+      </a>
+    </h1>
+    <!-- /header-logo -->
+    <!-- header-nav-toggle -->
+    <button id="js-hamburger-toggle" type="button" class="l-hamburger__toggle">
+      <div class="l-hamburger__toggleWrap">
+        <span class="l-hamburger__toggleLine"></span>
+        <span class="l-hamburger__toggleLine"></span>
+        <span class="l-hamburger__toggleLine"></span>
+      </div>
+    </button>
+    <!-- /header-nav-toggle -->
+    <!-- header-menu -->
+    <!-- <div id="js-menu-bg" class="l-menu-bg"></div> -->
+    <nav id="js-menu" class="l-menu">
+      <ul class="l-menu__list">
+        <li class="l-menu__item">
+          <a href="#" class="l-menu__link">TOP</a>
+        </li>
+        <li class="l-menu__item">
+          <a href="<%= path %>company" class="l-menu__link">COMPANY</a>
+        </li>
+        <li class="l-menu__item">
+          <a href="#" class="l-menu__link">SERVICE</a>
+        </li>
+        <li class="l-menu__item -pulldown js-submenu-trigger">
+          <a href="#" class="l-menu__link">WORKS</a>
+          <div class="l-menu-sub is-none js-submenu">
+            <div class="l-menu__subInner">
+              <figure>
+                <picture>
+                  <source srcset="<%= path %>assets/images/common/submenu_img01.webp" type="image/webp" />
+                  <img src="<%= path %>assets/images/common/submenu_img01.jpg" alt="" />
+                </picture>
+              </figure>
+              <ul class="l-menu-sub__list">
+                <li class="l-menu-sub__item">
+                  <a href="#" class="l-menu-sub__link">
+                    <div class="l-menu-sub__linkTitle">
+                      <span class="l-menu-sub__linkTitle--en">Architecture</span>
+                      <span class="l-menu-sub__linkTitle--ja">建築事業</span>
+                    </div>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li class="l-menu-sub__item">
+                  <a href="#" class="l-menu-sub__link">
+                    <div class="l-menu-sub__linkTitle">
+                      <span class="l-menu-sub__linkTitle--en">Civil engineering</span>
+                      <span class="l-menu-sub__linkTitle--ja">土木事業</span>
+                    </div>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li class="l-menu-sub__item">
+                  <a href="#" class="l-menu-sub__link">
+                    <div class="l-menu-sub__linkTitle">
+                      <span class="l-menu-sub__linkTitle--en">Housing</span>
+                      <span class="l-menu-sub__linkTitle--ja">住宅事業</span>
+                    </div>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="l-menu__item">
+          <a href="#" class="l-menu__link">NEWS</a>
+        </li>
+      </ul>
+      <div class="l-menu-button">
+        <ul class="l-menu-button__list">
+          <li class="l-menu-button__item">
+            <a href="#" class="l-menu-button__link -recruit">RECRUIT</a>
+          </li>
+          <li class="l-menu-button__item">
+            <a href="#" class="l-menu-button__link -contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="l-menu__company">
+        <div class="l-menu__access">
+          <p class="l-menu__accessTitle">Access</p>
+          <address>
+            藤原建設工業株式会社 本社<br>
+            〒000-0000 千葉県◯◯市◯◯丁目◯◯番<br>
+            <a href="#">TEL 00-0000-0000</a>
+          </address>
+        </div>
+      </div>
+      <div class="l-menu__policy">
+        <a href="#" class="l-menu__policyLink">Privacy<span>&nbsp;</span>Policy</a>
+        <p class="l-menu__policyText">© 1995 Fujiwara Construction Industry. Co., Ltd.</p>
+      </div>
+    </nav>
+    <!-- /header-menu -->
+  </div>
+</header>
+<!-- /header -->

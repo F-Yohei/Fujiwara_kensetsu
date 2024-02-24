@@ -1,0 +1,45 @@
+// ===========================
+// color
+// ===========================
+
+// 基本カラー
+$color-accent: #88b999;
+$color-sub: #182f20;
+$color-text: #111;
+$color-background: #f5f5f5;
+$color-line: #cbcbcb;
+
+// ===========================
+// font
+// ===========================
+$font-family-base: "Noto Sans JP", sans-serif;
+// regular → 400
+// medium → 500
+// bold → 700
+
+$font-family-en: Arial, "メイリオ", Meiryo, sans-serif;
+// regular → 400
+// bold → 600
+
+// ===========================
+// config
+// ===========================
+
+// ブレイクポイント(モバイルファースト)
+$breakpoints: (
+  "xs": "screen and (min-width: 369px)",
+  "sm": "screen and (min-width: 576px)",
+  "md": "screen and (min-width: 769px)",
+  "lg": "screen and (min-width: 1024px)",
+  "lg2": "screen and (min-width: 1025px)",
+  "xl": "screen and (min-width: 1280px)",
+  "xxl": "screen and (min-width: 1440px)"
+) !default;
+
+$xs: 369px;
+$sm: 576px;
+$md: 769px;
+$lg: 1024px;
+$lg2: 1025px;
+$xl: 1280px;
+$xxl: 1440px;

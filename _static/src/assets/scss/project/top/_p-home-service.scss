@@ -1,0 +1,210 @@
+/* service
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-service {
+    background: #fff;
+    padding: rem(72) 0 rem(36);
+    position: relative;
+
+    @include responsive(md) {
+        position: relative;
+        padding: rem(272) 0 rem(136);
+    }
+
+    &::before {
+        @include responsive(md) {
+            content: "";
+            display: block;
+            background-color: #f5f5f5;
+            width: 52.777777%;
+            height: calc(100% - 45.6rem);
+            position: absolute;
+            right: 0;
+            bottom: rem(56);
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1200px;
+        padding: rem(72) rem(20);
+        margin: 0 auto;
+
+        @include responsive(md) {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 rem(80);
+        }
+    }
+
+    &__desc {
+        @include responsive(md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 34.13%;
+            height: 100vh;
+            margin: -240px 0 0;
+            padding: 240px 0 0;
+            position: sticky;
+            top: 0;
+        }
+    }
+
+    &__title {
+        position: relative;
+    }
+
+    &__title--en {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(42, 47, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(64, 72, 600, 0, rem);
+        }
+    }
+
+    &__title--en::before {
+        content: "";
+        display: block;
+        width: rem(8);
+        height: rem(8);
+        background: #88b999;
+        border-radius: 50%;
+        position: absolute;
+        top: rem(8);
+        left: 0;
+    }
+
+    &__title--ja {
+        color: #88b999;
+        font-family: $font-family-base;
+        @include font(14, 20, 500, 150, rem);
+
+        @include responsive(md) {
+            @include font(16, 14, 500, 150, rem);
+        }
+    }
+
+    &__descWrapper {
+        margin-top: rem(34);
+
+        @include responsive(md) {
+            position: relative;
+        }
+
+        @include responsive(lg2) {
+            margin-top: rem(43);
+        }
+    }
+
+    &__descText {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 28, 400, 100, rem);
+    }
+
+    &__list {
+        padding: 8rem 0 4rem;
+        position: relative;
+
+        @include responsive(md) {
+            width: 46.15%;
+            padding: 0;
+        }
+    }
+
+    &__list:before {
+        position: absolute;
+        top: 4rem;
+        right: -2rem;
+        width: 94.3%;
+        height: calc(100% - 4rem);
+        background-color: #f5f5f5;
+        content: "";
+
+        @include responsive(md) {
+            display: none;
+        }
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: rem(40);
+
+        @include responsive(md) {
+            margin-top: rem(80);
+        }
+    }
+
+    &__itemTitle {
+        position: absolute;
+        top: rem(32);
+        left: rem(20);
+
+        @include responsive(md) {
+            position: absolute;
+            left: rem(-43);
+            top: auto;
+            bottom: rem(40);
+        }
+    }
+
+    &__itemTitle--en {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(28, 42, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(36, 42, 600, 0, rem);
+        }
+    }
+
+    &__itemTitle--ja {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(13, 14, 500, 150, rem);
+
+        @include responsive(md) {
+            @include font(16, 44, 500, 150, rem);
+        }
+    }
+
+    &__link {
+        padding: rem(20);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include responsive(md) {
+            padding: rem(40);
+        }
+    }
+
+    &__item figure img {
+        width: 100%;
+    }
+
+    .-arch {
+        .p-home-service__link {
+            background: #88b999;
+        }
+    }
+    .-civil {
+        .p-home-service__link {
+            background: #ebc110;
+        }
+    }
+    .-housing {
+        .p-home-service__link {
+            background: #182f20;
+        }
+    }
+}

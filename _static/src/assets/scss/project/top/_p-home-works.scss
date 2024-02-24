@@ -1,0 +1,283 @@
+/* works
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-works {
+    background-color: #fff;
+    padding: rem(36) 0 rem(114);
+    position: relative;
+
+    @include responsive(md) {
+        overflow-y: hidden;
+        padding: rem(80) 0 rem(50);
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 84.6%;
+        height: 100%;
+        background-color: $color-background;
+        content: "";
+
+        @include responsive(md) {
+            width: 91.666666%;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 rem(20);
+
+        @include responsive(md) {
+            padding: 0 rem(80);
+        }
+    }
+
+    &__title {
+        position: relative;
+    }
+
+    &__title--en {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(42, 47, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(64, 72, 600, 0, rem);
+        }
+    }
+
+    &__title--en::before {
+        content: "";
+        display: block;
+        width: rem(8);
+        height: rem(8);
+        background: #88b999;
+        border-radius: 50%;
+        position: absolute;
+        top: rem(8);
+        left: 0;
+    }
+
+    &__title--ja {
+        color: #88b999;
+        font-family: $font-family-base;
+        @include font(14, 20, 500, 150, rem);
+
+        @include responsive(md) {
+            @include font(16, 14, 500, 150, rem);
+        }
+    }
+
+    &__slideContainer {
+        margin: rem(80) 0 rem(32) rem(20);
+
+        @include responsive(md) {
+            margin: rem(40) 0 rem(80) 0;
+        }
+    }
+
+    &__slideItem {
+        width: 100%;
+    }
+
+    &__itemBlock {
+        position: relative;
+    }
+
+    &__itemBlock {
+        figure {
+            position: relative;
+            overflow: hidden;
+        }
+
+        figure img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        figure::before {
+            display: block;
+            padding-top: 75%;
+            content: "";
+        }
+    }
+
+    &__slideLink:hover {
+        figure {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__slideLink:hover {
+        .p-home-works__subTitle {
+            color: $color-accent;
+        }
+    }
+
+    &__slideLink:hover {
+        time {
+            color: $color-accent;
+        }
+    }
+
+    &__itemTag {
+        display: block;
+        background: #88b999;
+        color: #fff;
+        @include font(12, 14, 600, 150, rem);
+        font-family: $font-family-base;
+        padding: rem(12) rem(27);
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include font(12, 18, 700, 150, rem);
+
+        &.-archi {
+            background-color: $color-accent;
+        }
+        &.-civil {
+            background-color: #ebc110;
+        }
+        &.-housing {
+            background-color: #182f20;
+        }
+    }
+
+    &__subTitle {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(16, 24, 600, 150, rem);
+        transition: color 0.5s ease;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(18);
+    }
+
+    time {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(16, 24, 600, 50, rem);
+        transition: color 0.5s ease;
+    }
+
+    .c-link__wrap {
+        margin-top: rem(35);
+        position: relative;
+    }
+
+    // .splide {
+    //     visibility: visible;
+    // }
+
+    .splide__track {
+        overflow: inherit;
+    }
+
+    .splide__arrows {
+        position: absolute;
+        top: rem(-44);
+        right: rem(30);
+        width: rem(72);
+
+        @include flex(space-between, center, row);
+        @include responsive(md) {
+            top: rem(-72);
+            right: 0;
+            width: rem(122);
+        }
+        .splide__arrow {
+            width: rem(17);
+            height: rem(26);
+            background: none;
+            opacity: 1;
+            transform: unset;
+
+            @include responsive(md) {
+                width: rem(22);
+                height: rem(33);
+            }
+            &:disabled {
+                opacity: 1;
+            }
+            svg {
+                display: none;
+            }
+            &.splide__arrow--prev {
+                position: relative;
+                left: 0;
+                background-image: url(../images/common/slider_arrow_prev.svg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &.splide__arrow--next {
+                position: relative;
+                right: 0;
+                background-image: url(../images/common/slider_arrow_next.svg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .p-home-works__slideNumber {
+        position: absolute;
+        top: rem(-40);
+        left: rem(-6);
+
+        @include responsive(md) {
+            top: rem(-56);
+            left: 38.461%;
+        }
+    }
+
+    .p-home-works__slideNumberInner {
+        @include flex(center, center, row);
+        .-number {
+            font-family: $font-family-en;
+
+            @include font(14, 16, 400, 0, rem);
+            @include responsive(md) {
+                @include font(18, 20, 400, 0, rem);
+            }
+        }
+        .-slash {
+            display: block;
+            margin: 0 rem(8);
+            font-family: $font-family-en;
+
+            @include font(14, 16, 400, 0, rem);
+            @include responsive(md) {
+                @include font(18, 20, 400, 0, rem);
+            }
+        }
+        .-all {
+            font-family: $font-family-en;
+
+            @include font(14, 16, 400, 0, rem);
+            @include responsive(md) {
+                @include font(18, 20, 400, 0, rem);
+            }
+        }
+    }
+}

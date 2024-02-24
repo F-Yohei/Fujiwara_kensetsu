@@ -1,0 +1,81 @@
+/* p-loading
+----------------------------------------- */
+@use "../global" as *;
+
+.p-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    pointer-events: none;
+    &.is-loaded {
+        pointer-events: none;
+    }
+
+    &.is-none {
+        display: none;
+    }
+}
+
+.p-loading__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        content: " ";
+        transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(0);
+    }
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #d9e3dd;
+        content: " ";
+        transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateX(-100%);
+    }
+    &.is-loaded-bgG {
+        &:after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    &.is-loaded {
+        &:after {
+            transform: translateX(100%);
+        }
+        &::before {
+            transform: translateX(100%);
+        }
+    }
+}
+
+.p-loading__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%);
+    &.is-anim {
+        opacity: 0;
+    }
+}

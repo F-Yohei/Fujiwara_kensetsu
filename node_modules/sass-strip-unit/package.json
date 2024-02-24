@@ -1,0 +1,25 @@
+{
+  "name": "sass-strip-unit",
+  "version": "1.0.0",
+  "description": "Sass function to get a unitless number.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "unitless",
+    "unit",
+    "number"
+  ],
+  "author": "Laza Bogdan <laza.bogdan@macro-net.ro>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themekit/sass-strip-unit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themekit/sass-strip-unit/issues"
+  },
+  "homepage": "https://github.com/themekit/sass-strip-unit#readme"
+}

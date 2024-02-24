@@ -1,0 +1,22 @@
+/* video
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-video {
+    @include img(390, 245);
+    @include responsive(md) {
+        @include img(1440, 435);
+    }
+}
+
+.p-home-mv__video {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}

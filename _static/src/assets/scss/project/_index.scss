@@ -1,0 +1,28 @@
+// ===========================
+// project
+// ===========================
+
+// // top
+@use "top/p-home-mv";
+@use "top/p-home-slider";
+@use "top/p-home-catch";
+@use "top/p-home-about";
+@use "top/p-home-service";
+@use "top/p-home-works";
+@use "top/p-home-news";
+@use "top/p-home-recruit";
+@use "top/p-home-video";
+@use "top/p-home-loop";
+
+// // sub
+@use "sub/p-about";
+@use "sub/p-company";
+
+// // project
+@use "p-hero";
+@use "p-fixed-button";
+@use "p-cursor";
+@use "p-loop";
+@use "p-scroll";
+@use "p-loading";
+@use "p-overlay";

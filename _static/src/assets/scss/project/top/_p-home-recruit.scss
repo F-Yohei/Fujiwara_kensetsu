@@ -1,0 +1,87 @@
+/* recruit
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-recruit {
+    background: #dad2c6;
+    position: relative;
+
+    &__container {
+        padding: rem(72) rem(20) rem(137);
+
+        @include responsive(md) {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: rem(140) rem(80) rem(227);
+        }
+    }
+
+    &__title {
+        position: relative;
+    }
+
+    &__title--en {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(42, 47, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(64, 72, 600, 0, rem);
+        }
+    }
+
+    &__title--en::before {
+        content: "";
+        display: block;
+        width: rem(8);
+        height: rem(8);
+        background: #88b999;
+        border-radius: 50%;
+        position: absolute;
+        top: rem(8);
+        left: 0;
+    }
+
+    &__title--ja {
+        color: #88b999;
+        font-family: $font-family-base;
+        @include font(14, 20, 500, 150, rem);
+
+        @include responsive(md) {
+            @include font(16, 14, 500, 150, rem);
+        }
+    }
+
+    &__descWrapper {
+        margin-top: rem(34);
+
+        @include responsive(md) {
+            width: 34.61%;
+            margin-top: 0;
+        }
+    }
+
+    figure {
+        @include responsive(md) {
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    &__descText {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 28, 400, 100, rem);
+    }
+
+    .c-link__wrap {
+        margin-top: rem(32);
+    }
+}

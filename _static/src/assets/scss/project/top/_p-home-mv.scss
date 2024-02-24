@@ -1,0 +1,15 @@
+/* home-mv
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-mv {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  padding: rem(70) 0 0;
+  background-color: #fff;
+
+  @include responsive(md) {
+    padding: rem(138) 0 0;
+  }
+}

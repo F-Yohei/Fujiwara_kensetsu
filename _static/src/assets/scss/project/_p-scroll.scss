@@ -1,0 +1,80 @@
+/* scroll
+----------------------------------------- */
+@use "../global" as *;
+
+.p-scroll {
+    position: absolute;
+    right: rem(30);
+    bottom: 0;
+    z-index: 6;
+    height: rem(110);
+    opacity: 0;
+    transition: opacity 1s ease;
+    transition-delay: 1s;
+    transform: translate(0%, 0%);
+
+    @include responsive(md) {
+        right: rem(80);
+        bottom: 0;
+        height: rem(200);
+    }
+    &.is-loaded {
+        opacity: 1;
+    }
+}
+
+.p-scroll__arrow {
+    position: relative;
+    overflow: hidden;
+    width: 1px;
+    height: rem(110);
+    background-color: #fff;
+
+    @include responsive(md) {
+        width: rem(2);
+        height: rem(200);
+    }
+    &::before {
+        position: absolute;
+        top: rem(-110);
+        left: rem(1);
+        width: rem(2);
+        height: rem(110);
+        background-color: #111;
+        content: "";
+        animation: arrow 3s ease 0s infinite normal;
+
+        @include responsive(md) {
+            top: rem(-200);
+            height: rem(200);
+            animation: arrowPc 3s ease 0s infinite normal;
+        }
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    60% {
+        transform: translate3d(-50%, rem(110), 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, rem(110), 0);
+    }
+}
+@keyframes arrowPc {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    60% {
+        transform: translate3d(-50%, rem(200), 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, rem(200), 0);
+    }
+}

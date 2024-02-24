@@ -1,0 +1,48 @@
+/* fixed-button
+----------------------------------------- */
+@use "../global" as *;
+
+.p-fixed-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+
+    @include responsive(md) {
+        display: none;
+    }
+
+    &.is-active {
+        opacity: 1;
+    }
+
+    &__list {
+        @include flex(center, center, row);
+    }
+    &__item {
+        width: 33.333333%;
+    }
+
+    &__link {
+        display: block;
+        color: #fff;
+        @include font(16, 18, 600, 100, rem);
+        padding: rem(20) 0;
+        text-align: center;
+
+        &.-entry {
+            background: $color-accent;
+        }
+
+        &.-recruit {
+            background: $color-text;
+        }
+
+        &.-contact {
+            background: #ebc110;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+/* catch
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-home-catch {
+    position: absolute;
+    top: rem(180);
+    left: rem(-40);
+    z-index: 2;
+
+    @include responsive(md) {
+        top: rem(337);
+        left: rem(-180);
+    }
+
+    &__eng {
+        margin: 0 0 rem(19) 0;
+
+        @include responsive(md) {
+            margin: 0 0 rem(28) 0;
+        }
+        &.is-loaded-text {
+            .p-home-catch__engWrap {
+                .p-home-catch__engText {
+                    animation: slideCatchIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s forwards;
+                }
+            }
+        }
+    }
+
+    &__engWrap {
+        @include flex(flex-start, center, row);
+    }
+
+    &__engBlock {
+        @include responsive(md) {
+            margin: rem(8) 0 0;
+        }
+    }
+
+    &__engText {
+        display: block;
+        font-family: $font-family-en;
+        opacity: 0;
+
+        @include font(48, 53, 600, 50, rem);
+        @include responsive(md) {
+            @include font(124, 125, 600, 50, rem);
+        }
+    }
+
+    &__text {
+        color: $color-text;
+        @include font(16, 36, 700, 150, rem);
+        margin-top: rem(26);
+        // opacity: 0;
+        transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include responsive(lg2) {
+            @include font(22, 44, 600, 150, rem);
+        }
+    }
+
+    &__engBlock {
+        @include responsive(md) {
+            margin: rem(8) 0 0;
+            @include flex(flex-start, center, row);
+        }
+    }
+}
+
+@keyframes slideCatchIn {
+    0% {
+        opacity: 0;
+        transform: translate(1rem, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

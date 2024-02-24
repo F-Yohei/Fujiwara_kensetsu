@@ -1,0 +1,161 @@
+/* section
+----------------------------------------- */
+@use "../global" as *;
+
+.l-section {
+    &__title {
+        padding: 0 0 0 rem(20);
+        position: relative;
+
+        .-jp {
+            display: block;
+            color: #88b999;
+            font-family: $font-family-base;
+            @include font(14, 20, 500, 150, rem);
+            opacity: 1;
+            transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+            @include responsive(md) {
+                @include font(16, 14, 500, 150, rem);
+            }
+        }
+
+        &.is-anim {
+            &__titleTextWrap::before {
+                opacity: 1;
+            }
+            .l-section__titleTextWrap {
+                .l-section__titleText {
+                    animation: slideInTitle 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s forwards;
+                }
+            }
+            span {
+                &.-jp {
+                    opacity: 1;
+                }
+            }
+            .l-section__titleTextWrap::before {
+                opacity: 1;
+            }
+        }
+    }
+    &__titleTextWrap {
+        display: block;
+    }
+
+    &__titleTextWrap::before {
+        content: "";
+        display: block;
+        width: rem(8);
+        height: rem(8);
+        background: #88b999;
+        border-radius: 50%;
+        position: absolute;
+        top: rem(8);
+        left: 0;
+        opacity: 1;
+        transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include responsive(md) {
+            width: rem(10);
+            height: rem(10);
+        }
+    }
+
+    &__titleText {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(42, 47, 600, 0, rem);
+        opacity: 1;
+        transform: translate(0, 0);
+
+        @include responsive(md) {
+            @include font(64, 72, 600, 0, rem);
+        }
+    }
+}
+
+.l-section__subTitle {
+    color: $color-text;
+    font-family: $font-family-en;
+    @include font(28, 42, 600, 0, rem);
+    @include responsive(md) {
+        @include font(36, 42, 600, 0, rem);
+    }
+
+    span {
+        display: block;
+        color: $color-accent;
+        font-family: $font-family-base;
+        @include font(12, 10, 500, 150, rem);
+
+        @include responsive(md) {
+            @include font(14, 10, 500, 150, rem);
+            margin-top: rem(10);
+        }
+    }
+}
+
+.l-section__text {
+    color: $color-text;
+    font-family: $font-family-base;
+    @include font(15, 28, 500, 150, rem);
+    margin-top: rem(28);
+
+    @include responsive(md) {
+        margin-top: rem(38);
+    }
+}
+
+.l-section-list {
+    margin-top: rem(59);
+
+    @include responsive(md) {
+        margin-top: 0;
+    }
+
+    &__row {
+        display: flex;
+        border-bottom: 1px solid #cbcbcb;
+        width: 100%;
+        padding: rem(36) 0;
+    }
+
+    &__row:first-child {
+        border-top: 1px solid #cbcbcb;
+    }
+
+    &__item {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 28, 600, 150, rem);
+        width: rem(90);
+        margin-right: rem(32);
+
+        @include responsive(md) {
+            width: rem(96);
+            margin-right: rem(60);
+        }
+    }
+
+    &__desc {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(14, 28, 400, 150, rem);
+
+        @include responsive(md) {
+            @include font(15, 28, 400, 150, rem);
+        }
+    }
+}
+
+@keyframes slideInTitle {
+    0% {
+        opacity: 0;
+        transform: translate(5px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

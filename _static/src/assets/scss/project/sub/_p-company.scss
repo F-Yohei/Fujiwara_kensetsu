@@ -1,0 +1,116 @@
+/* company
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-company-message {
+    figure {
+        picture {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.p-company-message__inner {
+    position: relative;
+    margin-top: rem(56);
+
+    @include responsive(md) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .message {
+        color: rgba(0, 0, 0, 0);
+        font-family: $font-family-en;
+        @include font(48, 55, 600, 25, rem);
+        -webkit-text-stroke: 1px $color-accent;
+        position: absolute;
+        top: rem(-35);
+        right: 0;
+
+        @include responsive(md) {
+            display: flex;
+            align-items: end;
+            right: 1.2rem;
+            bottom: -8.6rem;
+            @include font(200, 230, 600, 25, rem);
+        }
+    }
+}
+
+.p-company-message__desc {
+    @include responsive(md) {
+        width: 34.13%;
+        margin: -3.4rem 0 0;
+    }
+}
+
+.p-company-message__catch {
+    color: $color-text;
+    font-family: $font-family-base;
+    @include font(20, 28, 500, 150, rem);
+    margin-top: rem(29);
+
+    @include responsive(md) {
+        @include font(28, 42, 500, 150, rem);
+    }
+}
+
+.p-company-info {
+    .l-container {
+        .l-section-list {
+            @include responsive(md) {
+                width: 65.38%;
+            }
+        }
+    }
+}
+
+.p-company-info__inner {
+    padding: rem(152) 0;
+
+    @include responsive(md) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: rem(210);
+        padding-bottom: rem(225);
+    }
+}
+
+// access
+.p-company-access__inner {
+    padding-bottom: rem(152);
+
+    @include responsive(md) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.p-company-access__desc {
+    @include responsive(md) {
+        width: 65.38%;
+    }
+
+    figure {
+        @include responsive(md) {
+            height: 382px;
+            margin-bottom: rem(40);
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+
+    // .l-section__list {
+    //     @include responsive(md) {
+    //         margin-top: rem(40);
+    //     }
+    // }
+}

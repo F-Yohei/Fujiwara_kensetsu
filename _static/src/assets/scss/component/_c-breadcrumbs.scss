@@ -1,0 +1,48 @@
+/* breadcrumbs
+----------------------------------------- */
+@use "../global" as *;
+
+.c-breadcrumbs {
+    margin-top: rem(24);
+
+    @include responsive(md) {
+        margin-top: rem(44);
+    }
+
+    .l-container {
+        @include responsive(md) {
+            max-width: 100%;
+            padding: 0 rem(40);
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__item:not(:first-child) {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item:not(:first-child)::before {
+        content: "";
+        display: block;
+        background: #111111;
+        width: rem(16);
+        height: rem(1);
+        margin: 0 rem(12);
+    }
+
+    &__link {
+        display: bloc;
+        font-family: $font-family-base;
+        @include mfont(14, 12, 20, 400, 150, rem);
+
+        &[aria-current="page"] {
+            color: #b4b4b4;
+            text-decoration: none !important;
+        }
+    }
+}

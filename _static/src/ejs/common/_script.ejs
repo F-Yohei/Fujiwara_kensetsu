@@ -1,0 +1,16 @@
+<% let path = jsonData.pages[pageId].path %>
+<!-- common.bundle.js -->
+<script src="<%= path %>assets/js/common.bundle.js"></script>
+<!-- IE object-fit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.js"></script>
+<script>
+  objectFitImages();
+</script>
+<!-- polyfill(picture IE) -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="<%= path %>assets/js/gsap.min.js"></script>
+<script src="<%= path %>assets/js/ScrollTrigger.min.js"></script>
+<!-- swiper.js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

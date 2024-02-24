@@ -1,0 +1,48 @@
+/* page-hero
+----------------------------------------- */
+@use "../global" as *;
+
+.p-hero {
+    position: relative;
+
+    .l-section__title {
+        @include responsive(md) {
+            position: absolute;
+            top: rem(400);
+            left: rem(200);
+            z-index: 1;
+        }
+    }
+
+    figure {
+        @include img(390, 280);
+        padding-top: rem(42);
+        position: relative;
+
+        @include responsive(md) {
+            width: 73.6%;
+            margin: 0 0 0 auto;
+            @include img(1060, 604);
+        }
+        picture {
+            img {
+                width: 100%;
+
+                @include responsive(md) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    figure::before {
+        padding: 0;
+        @include responsive(md) {
+            content: "";
+            display: block;
+            padding-top: 56.98%;
+        }
+    }
+}
