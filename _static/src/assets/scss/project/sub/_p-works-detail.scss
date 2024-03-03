@@ -1,0 +1,197 @@
+/* works-detail
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-works-detail {
+    padding: rem(118) 0 rem(72) 0;
+
+    &__article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: none;
+
+        @include responsive(md) {
+            display: block;
+            position: sticky;
+            top: 0;
+        }
+    }
+
+    &__item:not(:first-child) {
+        @include responsive(md) {
+            margin-top: rem(33);
+        }
+    }
+
+    &__link {
+        display: block;
+
+        @include responsive(md) {
+            color: #cbcbcb;
+            font-family: $font-family-base;
+            @include font(20, 22, 600, 150, rem);
+        }
+
+        &.is-active {
+            color: $color-text;
+        }
+    }
+
+    &__content {
+        @include responsive(md) {
+            width: 69.23%;
+        }
+    }
+
+    &__title {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(20, 28, 400, 150, rem);
+
+        @include responsive(md) {
+            @include font(28, 41, 400, 150, rem);
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: rem(28);
+
+        @include responsive(md) {
+            margin-top: rem(30);
+        }
+
+        time {
+            color: $color-text;
+            font-family: $font-family-en;
+            @include font(16, 16, 400, 50, rem);
+        }
+
+        span {
+            display: block;
+            border: 1px solid $color-text;
+            color: $color-text;
+            font-family: $font-family-base;
+            @include font(13, 22, 400, 150, rem);
+            padding: rem(7) rem(22);
+
+            @include responsive(md) {
+                @include font(14, 22, 400, 150, rem);
+            }
+        }
+    }
+
+    &__eyecatch {
+        margin-top: rem(32);
+
+        @include responsive(md) {
+            margin-top: rem(40);
+        }
+    }
+
+    &__block {
+        padding-top: rem(85);
+
+        @include responsive(md) {
+            padding-top: rem(160);
+        }
+    }
+
+    &__blockTitle {
+        border-bottom: 1px solid $color-text;
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(18, 32, 400, 150, rem);
+        padding-bottom: rem(16);
+
+        @include responsive(md) {
+            @include font(22, 32, 400, 150, rem);
+            padding-bottom: rem(20);
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: rem(28);
+
+        @include responsive(md) {
+            margin-top: rem(40);
+        }
+    }
+
+    &__galleryItem {
+        width: 47.14%;
+    }
+
+    &__galleryItem:not(:nth-child(2n)) {
+        margin: 0 5.72% 5.72% 0;
+    }
+
+    &__galleryLink {
+        display: block;
+
+        figure {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__otherLinkInner {
+        padding-top: rem(152);
+
+        @include responsive(md) {
+            width: 69.23%;
+            padding-top: rem(170);
+            margin: 0 0 8rem auto;
+        }
+    }
+
+    &__otherLinkItem {
+        border-bottom: 1px solid #cbcbcb;
+
+        .l-section__subTitle span {
+            color: $color-text;
+        }
+
+        .c-link {
+            .circle {
+                border: 1px solid $color-text;
+                width: rem(24);
+                height: rem(24);
+
+                @include responsive(md) {
+                    width: rem(40);
+                    height: rem(40);
+                }
+            }
+
+            .arrow {
+                background-image: url(../images/common/link_arrow_black.svg);
+            }
+        }
+    }
+
+    &__otherLinkItem:first-child {
+        border-top: 1px solid #cbcbcb;
+    }
+
+    &__otherLink {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(40) 0;
+
+        @include responsive(md) {
+            padding: rem(58) 0;
+        }
+    }
+}

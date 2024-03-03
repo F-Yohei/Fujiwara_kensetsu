@@ -55,7 +55,7 @@
         color: #88b999;
         font-family: $font-family-en;
         @include font(32, 37, 600, 0 rem);
-        opacity: 0;
+        opacity: 1;
         transform: translate(0, 0);
         @include responsive(lg2) {
             @include font(80, 92, 600, 0, rem);

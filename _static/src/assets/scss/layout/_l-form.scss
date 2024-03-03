@@ -1,0 +1,210 @@
+/* form
+----------------------------------------- */
+@use "../global" as *;
+
+.l-form {
+    margin-top: rem(68);
+
+    @include responsive(md) {
+        margin-top: rem(112);
+    }
+
+    &__item {
+        @include responsive(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__item:not(:first-child) {
+        margin-top: rem(52);
+    }
+
+    &__dt {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 28, 400, 150, rem);
+        @include responsive(md) {
+            @include font(18, 27, 400, 150, rem);
+        }
+    }
+
+    &__dd {
+        margin-top: rem(19);
+        @include responsive(md) {
+            width: 69.375%;
+        }
+        span {
+            input {
+                background: #f0f0f0;
+                border: 1px solid #b4b4b4;
+                width: 100%;
+                height: rem(64);
+                padding: rem(21) rem(24);
+            }
+        }
+
+        &.-zip {
+            span {
+                input {
+                    width: 60.2739%;
+                }
+            }
+        }
+
+        &.-file {
+            span {
+                input {
+                    padding: rem(17) rem(24);
+                }
+            }
+        }
+
+        &.-radio {
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+
+            .-flex:not(:last-child) {
+                margin-right: rem(31);
+
+                @include responsive(md) {
+                    margin-right: rem(39);
+                }
+            }
+        }
+
+        textarea {
+            background: #f0f0f0;
+            border: 1px solid #b4b4b4;
+            width: 100%;
+            height: rem(260);
+            padding: rem(21) rem(24);
+        }
+
+        input[type="radio"] {
+            -webkit-appearance: none; /* フォーム要素のスタイルを初期化 */
+            width: rem(24);
+            height: rem(24);
+            border: 2px solid #b4b4b4;
+            border-radius: 50%;
+            padding: 0;
+            position: relative;
+            cursor: pointer;
+        }
+        /* 内側のマル */
+        input[type="radio"]:before {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* 選択された時の内側のマルの色 */
+        input[type="radio"]:checked:before {
+            background: $color-accent;
+            border: 2px solid $color-accent;
+        }
+    }
+
+    &__select {
+        position: relative;
+    }
+
+    &__select::before {
+        content: "";
+        display: block;
+        background-image: url(../images/common/select_arrow_up.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 2.4rem;
+        width: 1.1rem;
+        height: 0.7rem;
+        transform: translate(0%, -50%);
+    }
+
+    .select {
+        appearance: none;
+        background: #f0f0f0;
+        border: 1px solid #b4b4b4;
+        width: 100%;
+        height: rem(64);
+        padding: 0 0 0 rem(24);
+        cursor: pointer;
+    }
+
+    &__label {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 24, 400, 150, rem);
+    }
+
+    &__privacy {
+        display: block;
+        margin-top: rem(32);
+
+        @include responsive(md) {
+            width: 69.375%;
+            margin: rem(52) 0 0 auto;
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__privacy input {
+        width: rem(24);
+        height: rem(24);
+        border: 1px solid #b4b4b4;
+        cursor: pointer;
+    }
+
+    &__privacyText {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 24, 400, 150, rem);
+        margin: 0 0 0 rem(16);
+
+        a {
+            border-bottom: 2px solid $color-text;
+        }
+    }
+
+    &__submit {
+        text-align: center;
+        margin-top: rem(36);
+
+        @include responsive(md) {
+            width: 69.375%;
+            margin: rem(52) 0 0 auto;
+        }
+    }
+
+    &__submit input {
+        display: block;
+        cursor: pointer;
+        background: $color-text;
+        border: 1px solid $color-text;
+        color: #fff;
+        @include font(16, 20, 600, 150, rem);
+        width: 100%;
+        padding: rem(24) 0;
+        transition: all 0.5s ease;
+    }
+
+    &__submit:hover input {
+        background: #fff;
+        color: $color-text;
+    }
+}

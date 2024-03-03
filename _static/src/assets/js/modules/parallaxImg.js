@@ -17,7 +17,7 @@ targets.forEach((target) => {
       y: +30,
       ease: "none",
       scrollTrigger: {
-        trigger: target,
+        trigger: target, //アニメーションが始まるトリガーの設定
         start: "top bottom",
         end: "bottom top",
         scrub: 0,

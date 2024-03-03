@@ -17,10 +17,19 @@
 // // sub
 @use "sub/p-about";
 @use "sub/p-company";
+@use "sub/p-service";
+@use "sub/p-works";
+@use "sub/p-works-detail";
+@use "sub/p-news";
+@use "sub/p-news-detail";
+@use "sub/p-recruit";
+@use "sub/p-contact";
+@use "sub/p-privacy";
 
 // // project
 @use "p-hero";
 @use "p-fixed-button";
+@use "p-fixed-bg";
 @use "p-cursor";
 @use "p-loop";
 @use "p-scroll";

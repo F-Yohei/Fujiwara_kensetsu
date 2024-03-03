@@ -1,0 +1,201 @@
+/* news-detail
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-news-detail {
+    @include responsive(md) {
+        padding: rem(160) 0;
+    }
+
+    .l-container {
+        max-width: 1040px;
+    }
+
+    &__title {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(20, 32, 400, 150, rem);
+
+        @include responsive(md) {
+            @include font(28, 41, 400, 150, rem);
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: rem(24);
+
+        time {
+            color: $color-text;
+            font-family: $font-family-en;
+            @include font(12, 24, 400, 50, 0);
+            margin-right: rem(24);
+            transition: color 0.5s ease;
+
+            @include responsive(md) {
+                @include font(14, 24, 400, 50, 0);
+                margin-right: rem(40);
+            }
+        }
+    }
+
+    &__eyecatch {
+        margin-top: rem(32);
+
+        @include responsive(md) {
+            margin-top: rem(40);
+        }
+    }
+
+    &__tag {
+        border: 1px solid $color-text;
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(12, 16, 400, 50, rem);
+        padding: rem(8) rem(12);
+        transition: all 0.5s ease;
+        @include responsive(md) {
+            @include font(14, 16, 400, 50, rem);
+        }
+    }
+
+    &__entry {
+        h2 {
+            color: $color-text;
+            font-family: $font-family-base;
+            @include font(18, 27, 400, 150, rem);
+            padding: 0 0 0 rem(22);
+            margin-top: rem(44);
+            position: relative;
+
+            @include responsive(md) {
+                @include font(24, 36, 400, 150, rem);
+                margin-top: rem(60);
+            }
+        }
+
+        h2:before {
+            content: "";
+            display: block;
+            background: $color-accent;
+            width: rem(10);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        h3 {
+            border-bottom: 3px solid $color-accent;
+            color: $color-text;
+            font-family: $font-family-base;
+            @include font(16, 24, 400, 150, rem);
+            padding-bottom: rem(15);
+            margin-top: rem(70);
+
+            @include responsive(md) {
+                @include font(18, 26, 400, 150, rem);
+                padding-bottom: rem(18);
+                margin-top: rem(85);
+            }
+        }
+
+        p {
+            color: $color-text;
+            font-family: $font-family-base;
+            @include font(15, 28, 400, 150, rem);
+            margin-top: rem(32);
+
+            @include responsive(md) {
+                margin-top: rem(40);
+            }
+        }
+
+        .c-list-button__block {
+            @include responsive(md) {
+                margin-top: rem(152);
+            }
+        }
+    }
+
+    &__socialList {
+        display: flex;
+        margin-top: rem(47);
+
+        @include responsive(md) {
+            margin-top: rem(192);
+        }
+    }
+
+    &__socialItem {
+        width: 33.333333%;
+    }
+
+    &__socialItem:nth-child(3) {
+        position: relative;
+    }
+
+    &__socialLink {
+        display: block;
+        height: rem(60);
+        position: relative;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.-twitter {
+            background-color: #3c96eb;
+        }
+
+        &.-twitter .icon {
+            background-image: url(../images/common/twitter_icon.svg);
+            width: 2.5rem;
+            height: 2rem;
+        }
+        &.-facebook {
+            background-color: #36529a;
+        }
+
+        &.-facebook .icon {
+            background-image: url(../images/common/facebook_icon.svg);
+            width: 1.1rem;
+            height: 2rem;
+        }
+        &.-copy {
+            background-color: #cbcbcb;
+        }
+
+        &.-copy .icon {
+            background-image: url(../images/common/clipboard_icon.svg);
+            width: 1.6rem;
+            height: 2rem;
+        }
+    }
+}
+
+.url-copied {
+    display: none;
+}
+
+.url-copied span {
+    display: block;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, 0%);
+    @include font(11, 11, 500, 0, rem);
+
+    @include responsive(md) {
+        @include font(12, 12, 500, 0, rem);
+    }
+}

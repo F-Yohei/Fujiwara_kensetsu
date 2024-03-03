@@ -1,0 +1,64 @@
+/* service
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-service__inner {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include responsive(md) {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 rem(80);
+    }
+
+    .l-container {
+        padding: 0 rem(40);
+
+        @include responsive(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .l-section__subTitle {
+            color: #fff;
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.p-service__desc {
+    margin-top: rem(48);
+
+    @include responsive(md) {
+        width: 40.34%;
+    }
+
+    @include responsive(md) {
+        margin-top: 0;
+    }
+
+    .p-service__message {
+        color: #fff;
+        font-family: $font-family-base;
+        @include font(20, 28, 400, 150, rem);
+
+        @include responsive(md) {
+            @include font(28, 42, 400, 150, rem);
+        }
+    }
+
+    .l-section__text {
+        color: #fff;
+    }
+
+    .c-link__wrap {
+        margin-top: rem(32);
+    }
+}

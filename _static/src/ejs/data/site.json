@@ -5,8 +5,8 @@
   },
   "pages": {
     "home": {
-      "name": "トップページ",
-      "description": "サイトの説明",
+      "name": "藤原建設工業株式会社",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "website",
       "slug": "../",
       "path": "./"
@@ -16,6 +16,90 @@
       "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "article",
       "slug": "company/index.html",
+      "path": "../"
+    },
+    "service": {
+      "name": "Service",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "service/index.html",
+      "path": "../"
+    },
+    "works": {
+      "name": "Works",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "works/index.html",
+      "path": "../"
+    },
+    "works-detail": {
+      "name": "Works詳細",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "works/detail/index.html",
+      "path": "../../"
+    },
+    "news": {
+      "name": "News",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "news/index.html",
+      "path": "../"
+    },
+    "news-detail": {
+      "name": "News詳細",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "news/detail/index.html",
+      "path": "../../"
+    },
+    "recruit": {
+      "name": "Recruit",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "recruit/index.html",
+      "path": "../"
+    },
+    "contact": {
+      "name": "Contact",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "contact/index.html",
+      "path": "../"
+    },
+    "contact-thx": {
+      "name": "お問い合わせありがとうございました。",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "contact/thx/index.html",
+      "path": "../../"
+    },
+    "entry": {
+      "name": "Entry",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "entry/index.html",
+      "path": "../"
+    },
+    "entry-thx": {
+      "name": "ご応募ありがとうございました。",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "entry/thx/index.html",
+      "path": "../../"
+    },
+    "404": {
+      "name": "お探しのページは見つかりませんでした。",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "404/index.html",
+      "path": "../"
+    },
+    "privacy": {
+      "name": "Privacy",
+      "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
+      "type": "article",
+      "slug": "privacy/index.html",
       "path": "../"
     }
   }

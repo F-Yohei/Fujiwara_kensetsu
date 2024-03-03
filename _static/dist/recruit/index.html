@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+ <html lang="ja">
+ <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# website: http://ogp.me/ns/website#">
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="format-detection" content="email=no, telephone=no, address=no" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="robots" content="noindex,nofollow" />
+   <title>News | 藤原建設工業株式会社</title>
+   <meta name="description" content="「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。" />
+   <meta name="keywords" content="" />
+   <link rel="canonical" href="./" />
+   <!-- favicon -->
+   <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+   <!-- apple-touch-icon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
+   <!-- font -->
+   <!-- style.css -->
+   <link rel="stylesheet" href="../assets/css/style.css" />
+   <!-- Remove "outline" when in focus(other than keyboard operation) -->
+   <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js" integrity="sha384-xRa5B8rCDfdg0npZcxAh+RXswrbFk3g6dlHVeABeluN8EIwdyljz/LqJgc2R3KNA" crossorigin="anonymous" defer></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="../assets/js/gsap.min.js"></script>
+   <script src="../assets/js/ScrollTrigger.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+ </head>
+ <body class="subpage">
+   <div class="wrap" ontouchstart="">
+     <!-- header -->
+     <header id="js-header" class="l-header">
+       <div class="l-header__inner">
+         <!-- header-logo -->
+         <h1 class="l-header__logo">
+           <a href="../" class="l-header__logoLink">
+             <img src="../assets/images/common/header_logo.svg" alt="ロゴ" />
+           </a>
+         </h1>
+         <!-- /header-logo -->
+         <!-- header-nav-toggle -->
+         <button id="js-hamburger-toggle" type="button" class="l-hamburger__toggle">
+           <div class="l-hamburger__toggleWrap">
+             <span class="l-hamburger__toggleLine"></span>
+             <span class="l-hamburger__toggleLine"></span>
+             <span class="l-hamburger__toggleLine"></span>
+           </div>
+         </button>
+         <!-- /header-nav-toggle -->
+         <!-- header-menu -->
+         <!-- <div id="js-menu-bg" class="l-menu-bg"></div> -->
+         <nav id="js-menu" class="l-menu">
+           <ul class="l-menu__list">
+             <li class="l-menu__item">
+               <a href="#" class="l-menu__link">TOP</a>
+             </li>
+             <li class="l-menu__item">
+               <a href="../company" class="l-menu__link">COMPANY</a>
+             </li>
+             <li class="l-menu__item">
+               <a href="../service" class="l-menu__link">SERVICE</a>
+             </li>
+             <li class="l-menu__item -pulldown js-submenu-trigger">
+               <a href="../works" class="l-menu__link">WORKS</a>
+               <div class="l-menu-sub is-none js-submenu">
+                 <div class="l-menu__subInner">
+                   <figure>
+                     <picture>
+                       <source srcset="../assets/images/common/submenu_img01.webp" type="image/webp" />
+                       <img src="../assets/images/common/submenu_img01.jpg" alt="" />
+                     </picture>
+                   </figure>
+                   <ul class="l-menu-sub__list">
+                     <li class="l-menu-sub__item">
+                       <a href="#" class="l-menu-sub__link">
+                         <div class="l-menu-sub__linkTitle">
+                           <span class="l-menu-sub__linkTitle--en">Architecture</span>
+                           <span class="l-menu-sub__linkTitle--ja">建築事業</span>
+                         </div>
+                         <span class="arrow"></span>
+                       </a>
+                     </li>
+                     <li class="l-menu-sub__item">
+                       <a href="#" class="l-menu-sub__link">
+                         <div class="l-menu-sub__linkTitle">
+                           <span class="l-menu-sub__linkTitle--en">Civil engineering</span>
+                           <span class="l-menu-sub__linkTitle--ja">土木事業</span>
+                         </div>
+                         <span class="arrow"></span>
+                       </a>
+                     </li>
+                     <li class="l-menu-sub__item">
+                       <a href="#" class="l-menu-sub__link">
+                         <div class="l-menu-sub__linkTitle">
+                           <span class="l-menu-sub__linkTitle--en">Housing</span>
+                           <span class="l-menu-sub__linkTitle--ja">住宅事業</span>
+                         </div>
+                         <span class="arrow"></span>
+                       </a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </li>
+             <li class="l-menu__item">
+               <a href="../news" class="l-menu__link">NEWS</a>
+             </li>
+           </ul>
+           <div class="l-menu-button">
+             <ul class="l-menu-button__list">
+               <li class="l-menu-button__item">
+                 <a href="#" class="l-menu-button__link -recruit">RECRUIT</a>
+               </li>
+               <li class="l-menu-button__item">
+                 <a href="#" class="l-menu-button__link -contact">CONTACT</a>
+               </li>
+             </ul>
+           </div>
+           <div class="l-menu__company">
+             <div class="l-menu__access">
+               <p class="l-menu__accessTitle">Access</p>
+               <address>
+                 藤原建設工業株式会社 本社<br>
+                 〒000-0000 千葉県◯◯市◯◯丁目◯◯番<br>
+                 <a href="#">TEL 00-0000-0000</a>
+               </address>
+             </div>
+           </div>
+           <div class="l-menu__policy">
+             <a href="#" class="l-menu__policyLink">Privacy<span>&nbsp;</span>Policy</a>
+             <p class="l-menu__policyText">© 1995 Fujiwara Construction Industry. Co., Ltd.</p>
+           </div>
+         </nav>
+         <!-- /header-menu -->
+       </div>
+     </header>
+     <!-- /header -->
+     <!-- main -->
+     <main id="top" class="l-main">
+       <article class="l-section">
+         <div id="js-top" class="p-hero">
+           <h2 class="l-section__title js-title load">
+             <span class="l-section__titleTextWrap"><span class="l-section__titleText">R</span><span class="l-section__titleText">e</span><span class="l-section__titleText">c</span><span class="l-section__titleText">r</span><span class="l-section__titleText">u</span><span class="l-section__titleText">i</span><span class="l-section__titleText">t</span><span class="-jp">採用情報</span>
+           </h2>
+           <figure class="js-parallax-hero">
+             <picture>
+               <source srcset="../assets/images/recruit/hero_img_pc.webp" media="(min-width: 769px)" type="image/webp" />
+               <source srcset="../assets/images/recruit/hero_img_pc.jpg" media="(min-width: 769px)" type="image/jpg" />
+               <source srcset="../assets/images/recruit/hero_img_sp.webp" type="image/webp" />
+               <img src="../assets/images/recruit/hero_img_sp.jpg" alt="" />
+             </picture>
+           </figure>
+         </div>
+         <nav class="c-breadcrumbs" aria-label="breadcrumb">
+           <div class="l-container">
+             <ul class="c-breadcrumbs__list">
+               <li class="c-breadcrumbs__item">
+                 <a href="../" class="c-breadcrumbs__link">TOP</a>
+               </li>
+               <li class="c-breadcrumbs__item">
+                 <a href="../company" class="c-breadcrumbs__link" aria-current="page">新着情報</a>
+               </li>
+             </ul>
+           </div>
+         </nav>
+         <!-- sec-recruit-message -->
+         <section class="p-recruit-message">
+           <div class="p-loop-textWrap">
+             <div class="p-loop-text">
+               <span>FUJIWARA</span>
+               <span>RECRUIT</span>
+             </div>
+           </div>
+           <div class="l-container">
+             <h2 class="p-recruit-message__title">過去と未来を繋ぎ続ける</h2>
+             <div class="p-recruit-message__head">
+               <figure class="p-recruit-message__headImg js-parallax-img">
+                 <picture>
+                   <source srcset="../assets/images/recruit/head_img01_pc.webp" media="(min-width: 769px)" type="image/webp" />
+                   <source srcset="../assets/images/recruit/head_img01_pc.jpg" media="(min-width: 769px)" type="image/jpg" />
+                   <source srcset="../assets/images/recruit/head_img01_sp.webp" type="image/webp" />
+                   <img src="../assets/images/recruit/head_img01_sp.jpg" alt="" />
+                 </picture>
+               </figure>
+               <figure class="p-recruit-message__headImg js-parallax-img">
+                 <picture>
+                   <source srcset="../assets/images/recruit/head_img02_pc.webp" media="(min-width: 769px)" type="image/webp" />
+                   <source srcset="../assets/images/recruit/head_img02_pc.jpg" media="(min-width: 769px)" type="image/jpg" />
+                   <source srcset="../assets/images/recruit/head_img02_sp.webp" type="image/webp" />
+                   <img src="../assets/images/recruit/head_img02_sp.jpg" alt="" />
+                 </picture>
+               </figure>
+             </div>
+             <div class="p-recruit-message__inner">
+               <span class="bg"></span>
+               <figure>
+                 <picture>
+                   <source srcset="../assets/images/recruit/message_img_pc.webp" media="(min-width: 769px)" type="image/webp" />
+                   <source srcset="../assets/images/recruit/message_img_pc.jpg" media="(min-width: 769px)" type="image/jpg" />
+                   <source srcset="../assets/images/recruit/message_img_sp.webp" type="image/webp" />
+                   <img src="../assets/images/recruit/message_img_sp.jpg" alt="" />
+                 </picture>
+               </figure>
+               <div class="p-recruit-message__desc">
+                 <h2 class="l-section__subTitle">Message<span>メッセージ</span></h2>
+                 <h3 class="p-company-message__catch">地域の皆様へ恩返しを</h3>
+                 <p class="l-section__text">私たちは、これまでたくさんの実績を残してきました。自慢の技術力も企業全体で向上してきており、私たちの誇りの一つです。<br />そんな誇りに思えるモノたちですが、地域の皆様のご協力や声援がなければ、積み上げることが出来なかったのは間違いありません。<br /><br />私たちは、これからも「地域の皆様へ恩返しを」を第一に、社会へ貢献していきます。<br />藤原建設工業では、地域へ貢献したいと強く思っている方を求めています。</p>
+               </div>
+             </div>
+           </div>
+           <figure class="p-recruit-message__parallax js-parallax-img">
+             <picture>
+               <source srcset="../assets/images/recruit/parallax_img_pc.webp" media="(min-width: 769px)" type="image/webp" />
+               <source srcset="../assets/images/recruit/parallax_img_pc.jpg" media="(min-width: 769px)" type="image/jpg" />
+               <source srcset="../assets/images/recruit/parallax_img_sp.webp" type="image/webp" />
+               <img src="../assets/images/recruit/parallax_img_sp.jpg" alt="" />
+             </picture>
+           </figure>
+         </section>
+         <!-- /sec-recruit-message -->
+         <!-- sec-recruit-faq -->
+         <section class="p-recruit-faq">
+           <div class="l-container">
+             <h2 class="l-section__subTitle">FAQ<span>よくある質問</span></h2>
+             <ul class="p-recruit-faq__list">
+               <li class="p-recruit-faq__item">
+                 <h2 class="p-recruit-faq__title close">高校卒業後でもエントリーは可能ですか？<span class="toggle"></span></h2>
+                 <p class="p-recruit-faq__text">はい、可能です。<br />ただし、エントリーできる職種に制限がある場合がございますので、下記の募集要項をご覧ください。</p>
+               </li>
+               <li class="p-recruit-faq__item">
+                 <h2 class="p-recruit-faq__title close">エントリー方法について教えてください。<span class="toggle"></span></h2>
+                 <p class="p-recruit-faq__text">募集要項の下部にエントリーフォームへのリンクがありますので、そちらからエントリーください。</p>
+               </li>
+               <li class="p-recruit-faq__item">
+                 <h2 class="p-recruit-faq__title close">資格取得支援制度のようなものはありますか？<span class="toggle"></span></h2>
+                 <p class="p-recruit-faq__text">はい、ございます。詳細はお問い合わせフォームよりご連絡ください。</p>
+               </li>
+               <li class="p-recruit-faq__item">
+                 <h2 class="p-recruit-faq__title close">必要な資格が知りたいです。<span class="toggle"></span></h2>
+                 <p class="p-recruit-faq__text">募集要項の「応募資格」の欄をご覧ください。資格の必要のない職種もございますので、募集要項を参照ください。</p>
+               </li>
+             </ul>
+           </div>
+         </section>
+         <!-- /sec-recruit-faq -->
+         <!-- sec-recruit-desc -->
+         <section class="p-recruit-desc">
+           <div class="l-container">
+             <h2 class="l-section__subTitle">Job description<span>募集要項</span></h2>
+             <div class="p-recruit-desc__tab">
+               <ul class="p-recruit-desc__menu">
+                 <li class="p-recruit-desc__item">
+                   <a href="#" data-id="menuId01" class="p-recruit-desc__link is-select">建設業務</a>
+                 </li>
+                 <li class="p-recruit-desc__item">
+                   <a href="#" data-id="menuId02" class="p-recruit-desc__link">事務業務</a>
+                 </li>
+                 <li class="p-recruit-desc__item">
+                   <a href="#" data-id="menuId03" class="p-recruit-desc__link">営業業務</a>
+                 </li>
+               </ul>
+               <div id="menuId01" class="p-recruit-desc__content is-select">
+                 <h2 class="p-recruit-desc__title">建設業務</h2>
+                 <dl class="l-section-list">
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">職種</dt>
+                     <dd class="l-section-list__desc">現場での建設業務</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">給与</dt>
+                     <dd class="l-section-list__desc">月給300,000円〜</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">雇用形態</dt>
+                     <dd class="l-section-list__desc">正社員（試用期間3ヶ月）</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">交通費</dt>
+                     <dd class="l-section-list__desc">10,000円まで支給</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">勤務場所</dt>
+                     <dd class="l-section-list__desc">〒000-0000<br />千葉県◯◯市◯◯丁目◯◯番</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">福利厚生</dt>
+                     <dd class="l-section-list__desc">雇用・労災・健康・厚生年金保険、資格取得支援、住宅手当</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">勤務時間</dt>
+                     <dd class="l-section-list__desc">8:30〜17:30</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">休日</dt>
+                     <dd class="l-section-list__desc">土・日・祝日、夏季、年末年始、有給休暇</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">応募資格</dt>
+                     <dd class="l-section-list__desc">未経験可　手に職を身につけたい方大歓迎</dd>
+                   </div>
+                 </dl>
+                 <div class="c-list-button__block">
+                   <a href="../entry" class="c-list-button">エントリー</a>
+                 </div>
+               </div>
+               <div id="menuId02" class="p-recruit-desc__content">
+                 <h2 class="p-recruit-desc__title">事務業務</h2>
+                 <dl class="l-section-list">
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">職種</dt>
+                     <dd class="l-section-list__desc">本社での事務業務</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">給与</dt>
+                     <dd class="l-section-list__desc">月給180,000円〜</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">雇用形態</dt>
+                     <dd class="l-section-list__desc">正社員（試用期間3ヶ月）</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">交通費</dt>
+                     <dd class="l-section-list__desc">10,000円まで支給</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">勤務場所</dt>
+                     <dd class="l-section-list__desc">〒000-0000<br />千葉県◯◯市◯◯丁目◯◯番</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">福利厚生</dt>
+                     <dd class="l-section-list__desc">雇用・労災・健康・厚生年金保険、資格取得支援、住宅手当</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">勤務時間</dt>
+                     <dd class="l-section-list__desc">8:30〜17:30</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">休日</dt>
+                     <dd class="l-section-list__desc">土・日・祝日、夏季、年末年始、有給休暇</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">応募資格</dt>
+                     <dd class="l-section-list__desc">日商簿記2級　パートでも可（要相談）</dd>
+                   </div>
+                 </dl>
+                 <div class="c-list-button__block">
+                   <a href="../entry" class="c-list-button">エントリー</a>
+                 </div>
+               </div>
+               <div id="menuId03" class="p-recruit-desc__content">
+                 <h2 class="p-recruit-desc__title">営業業務</h2>
+                 <dl class="l-section-list">
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">職種</dt>
+                     <dd class="l-section-list__desc">本社を拠点とした営業業務</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">給与</dt>
+                     <dd class="l-section-list__desc">月給350,000円〜</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">雇用形態</dt>
+                     <dd class="l-section-list__desc">正社員（試用期間3ヶ月）</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">交通費</dt>
+                     <dd class="l-section-list__desc">10,000円まで支給</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">勤務場所</dt>
+                     <dd class="l-section-list__desc">〒000-0000<br />千葉県◯◯市◯◯丁目◯◯番</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">福利厚生</dt>
+                     <dd class="l-section-list__desc">雇用・労災・健康・厚生年金保険、資格取得支援、住宅手当</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">勤務時間</dt>
+                     <dd class="l-section-list__desc">8:30〜17:30</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">休日</dt>
+                     <dd class="l-section-list__desc">土・日・祝日、夏季、年末年始、有給休暇</dd>
+                   </div>
+                   <div class="l-section-list__row">
+                     <dt class="l-section-list__item">応募資格</dt>
+                     <dd class="l-section-list__desc">営業経験3年以上</dd>
+                   </div>
+                 </dl>
+                 <div class="c-list-button__block">
+                   <a href="../entry" class="c-list-button">エントリー</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </section>
+         <!-- /sec-recruit-desc -->
+         <!-- sec-recruit-form -->
+         <section class="p-recruit-form">
+           <div class="l-container">
+             <div class="p-recruit-form__inner">
+               <a href="../entry" class="p-recruit-form__link">
+                 <h2 class="l-section__subTitle">Entry Form<span>エントリーフォーム</span></h2>
+                 <div class="c-link__wrap">
+                   <div class="c-link -white">
+                     View more
+                     <span class="circle">
+                       <span class="arrow"></span>
+                       <span class="arrow"></span>
+                     </span>
+                   </div>
+                 </div>
+               </a>
+             </div>
+             <div class="p-recruit-form__bg">
+               <figure>
+                 <picture>
+                   <source srcset="../assets/images/recruit/form_bg_pc.webp" media="(min-width: 769px)" type="image/webp" />
+                   <source srcset="../assets/images/recruit/form_bg_pc.jpg" media="(min-width: 769px)" type="image/jpg" />
+                   <source srcset="../assets/images/recruit/form_bg_sp.webp" type="image/webp" />
+                   <img src="../assets/images/recruit/form_bg_sp.jpg" width="390" height="182" loading="lazy" alt="" />
+                 </picture>
+               </figure>
+             </div>
+           </div>
+         </section>
+         <!-- /sec-recruit-form -->
+       </article>
+     </main>
+     <!-- /main -->
+     <!-- footer -->
+     <div class="l-footer__contact">
+       <div class="l-footer__contactInner">
+         <div class="l-footer__contactBlock">
+           <a href="../contact" class="l-footer__contactLink -contact">
+             <h2 class="l-footer__contactTitle">Contact<span>お問い合わせ</span></h2>
+             <div class="l-footer__contactBg"></div>
+           </a>
+         </div>
+         <div class="l-footer__contactBlock">
+           <a href="../recruit" class="l-footer__contactLink -recruit">
+             <h2 class="l-footer__contactTitle">Recruit<span>採用情報</span></h2>
+             <div class="l-footer__contactBg"></div>
+           </a>
+         </div>
+       </div>
+     </div>
+     <footer class="l-footer">
+       <div class="l-container">
+         <div class="l-footer__detail">
+           <nav class="l-footer__nav">
+             <ul class="l-footer__navList">
+               <li class="l-footer__navItem">
+                 <a href="#" class="l-footer__navLink">COMPANY</a>
+               </li>
+               <li class="l-footer__navItem">
+                 <a href="#" class="l-footer__navLink">SERVICE</a>
+               </li>
+               <li class="l-footer__navItem">
+                 <a href="#" class="l-footer__navLink">WORKS</a>
+               </li>
+               <li class="l-footer__navItem">
+                 <a href="#" class="l-footer__navLink">NEWS</a>
+               </li>
+               <li class="l-footer__navItem">
+                 <a href="#" class="l-footer__navLink">CONTACT</a>
+               </li>
+               <li class="l-footer__navItem">
+                 <a href="#" class="l-footer__navLink">RECRUIT</a>
+               </li>
+             </ul>
+           </nav>
+           <div class="l-footer__company">
+             <a href="../" class="l-header__logoLink">
+               <img src="../assets/images/common/footer_logo.svg" alt="藤原建設工業株式会社" />
+             </a>
+             <div class="l-footer__access">
+               <p class="l-footer__accessTitle">Access</p>
+               <address>
+                 藤原建設工業株式会社 本社<br>
+                 〒000-0000 千葉県◯◯市◯◯丁目◯◯番<br>
+                 <a href="tel:00-0000-0000">TEL 00-0000-0000</a>
+               </address>
+             </div>
+           </div>
+         </div>
+         <div class="l-footer__pageTop">
+           <a href="#top">
+             <div class="circle">
+               <span class="arrow"></span>
+             </div>
+           </a>
+         </div>
+         <div class="l-footer__policy">
+           <a href="#" class="l-footer__policy__link">Privacy Policy</a>
+           <p class="l-footer__policyText">© 1995 Fujiwara Construction Industry. Co., Ltd.</p>
+         </div>
+       </div>
+     </footer>
+     <!-- /footer -->
+     <!-- common.bundle.js -->
+     <script src="../assets/js/common.bundle.js"></script>
+     <!-- IE object-fit -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.js"></script>
+     <script>
+       objectFitImages();
+     </script>
+     <!-- polyfill(picture IE) -->
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <script src="../assets/js/gsap.min.js"></script>
+     <script src="../assets/js/ScrollTrigger.min.js"></script>
+     <!-- swiper.js -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <!-- recruit.bundle.js -->
+     <script src="../assets/js/recruit.bundle.js"></script>
+   </div>
+ </body>
+ </html>

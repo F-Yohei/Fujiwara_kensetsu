@@ -1,0 +1,25 @@
+/* list-button
+----------------------------------------- */
+@use "../global" as *;
+
+.c-list-button__block {
+    display: flex;
+    justify-content: center;
+    margin: rem(82) 0 rem(80) 0;
+
+    @include responsive(md) {
+        margin-top: rem(84);
+    }
+}
+
+.c-list-button {
+    border: 1px solid #cbcbcb;
+    color: $color-text;
+    font-family: $font-family-en;
+    @include font(15, 20, 400, 0, rem);
+    padding: rem(20) rem(35);
+
+    @include responsive(md) {
+        @include font(20, 20, 400, 0, rem);
+    }
+}

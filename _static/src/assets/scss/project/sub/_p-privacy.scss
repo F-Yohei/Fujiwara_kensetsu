@@ -1,0 +1,43 @@
+/* privacy
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-privacy {
+    .l-container {
+        padding-top: rem(118);
+        padding-bottom: rem(152);
+
+        @include responsive(md) {
+            padding-top: rem(120);
+            padding-bottom: rem(190);
+        }
+    }
+    &__block:not(:first-child) {
+        margin-top: rem(61);
+
+        @include responsive(md) {
+            margin-top: rem(87);
+        }
+    }
+    &__title {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(20, 28, 400, 100, rem);
+
+        @include responsive(md) {
+            @include font(28, 42, 400, 100, rem);
+        }
+    }
+
+    &__text {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(15, 28, 400, 100, rem);
+        margin-top: rem(25);
+
+        @include responsive(md) {
+            @include font(15, 34, 400, 100, rem);
+            margin-top: rem(43);
+        }
+    }
+}

@@ -53,11 +53,15 @@
         color: $color-text;
         @include font(16, 36, 700, 150, rem);
         margin-top: rem(26);
-        // opacity: 0;
+        opacity: 0;
         transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 
         @include responsive(lg2) {
             @include font(22, 44, 600, 150, rem);
+        }
+
+        &.is-loaded {
+            opacity: 1;
         }
     }
 
@@ -77,5 +81,11 @@
     100% {
         opacity: 1;
         transform: translate(0, 0);
+    }
+}
+
+.p-home-catch__text {
+    &.is-loaded {
+        opacity: 1;
     }
 }

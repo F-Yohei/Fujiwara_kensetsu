@@ -1,0 +1,162 @@
+/* contact
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-contact {
+    padding: rem(113) 0 rem(152) 0;
+
+    @include responsive(md) {
+        padding: rem(117) 0 rem(192) 0;
+    }
+
+    .l-container {
+        @include responsive(md) {
+            max-width: 960px;
+        }
+    }
+
+    &__head {
+        &.-notfound {
+            .l-container {
+                padding-top: rem(118);
+                padding-bottom: rem(152);
+
+                .l-section__text {
+                    text-align: center;
+                    @include font(15, 28, 400, 100, rem);
+                }
+            }
+
+            .p-contact__headText {
+                text-align: center;
+                @include font(18, 30, 400, 100, rem);
+
+                @include responsive(md) {
+                    @include font(20, 28, 400, 100, rem);
+                }
+            }
+        }
+    }
+
+    &__headTel {
+        background: #f0f0f0;
+        padding: rem(32);
+        margin-top: rem(40);
+
+        @include responsive(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: rem(66) rem(124);
+            margin-top: rem(59);
+        }
+    }
+
+    &__headTitle {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(28, 42, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(36, 42, 600, 0, rem);
+        }
+    }
+
+    &__headTitle span {
+        display: block;
+        @include font(13, 19, 500, 0, rem);
+
+        @include responsive(md) {
+            @include font(14, 44, 500, 0, rem);
+        }
+    }
+
+    &__headTelNumber {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(28, 42, 600, 0, rem);
+        text-align: right;
+        margin-top: rem(48);
+
+        @include responsive(md) {
+            @include font(36, 42, 600, 0, rem);
+            margin: 0;
+        }
+    }
+
+    &__headTelNumber span {
+        display: block;
+        font-family: $font-family-base;
+        @include font(13, 19, 500, 150, rem);
+
+        @include responsive(md) {
+            @include font(14, 44, 500, 150, rem);
+        }
+    }
+
+    &__lead {
+        margin-top: rem(80);
+
+        @include responsive(md) {
+            margin-top: rem(112);
+        }
+
+        .l-section__text {
+            margin-top: rem(35);
+
+            @include responsive(md) {
+                margin-top: rem(38);
+            }
+        }
+    }
+
+    &__progress {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(64);
+        @include responsive(md) {
+            margin-top: rem(86);
+        }
+    }
+
+    &__progressItem {
+        background: #f0f0f0;
+        color: #b4b4b4;
+        font-family: $font-family-base;
+        @include font(15, 22, 600, 150, rem);
+        text-align: center;
+        width: 31.83%;
+        padding: rem(16) 0;
+        @include responsive(md) {
+            @include font(24, 28, 600, 150, rem);
+        }
+
+        &.-current {
+            background: $color-accent;
+            color: #fff;
+        }
+    }
+
+    &__progressItem:not(:last-child) {
+        margin-right: rem(16);
+    }
+
+    &__button {
+        text-align: center;
+        width: 100%;
+        margin-top: rem(64);
+
+        @include responsive(md) {
+            width: 69.375%;
+            margin: rem(80) auto 0;
+        }
+    }
+
+    &__button a {
+        display: block;
+        background: $color-text;
+        color: #fff;
+        @include font(16, 20, 600, 150, rem);
+        padding: rem(25) 0;
+    }
+}

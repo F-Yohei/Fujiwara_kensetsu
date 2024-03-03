@@ -1,0 +1,50 @@
+/* archive
+----------------------------------------- */
+@use "../global" as *;
+
+.c-archive-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+    padding: 0 0 rem(12) 0;
+
+    @include responsive(md) {
+        padding: 0 0 rem(24) 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: rem(24);
+    }
+
+    &__title {
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(20, 28, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(36, 42, 600, 0, rem);
+        }
+    }
+
+    &__link {
+        display: block;
+        color: #cbcbcb;
+        font-family: $font-family-base;
+        @include font(13, 15, 600, 150, rem);
+
+        @include responsive(md) {
+            @include font(20, 22, 600, 150, rem);
+        }
+
+        &.-current {
+            color: $color-text;
+        }
+    }
+}

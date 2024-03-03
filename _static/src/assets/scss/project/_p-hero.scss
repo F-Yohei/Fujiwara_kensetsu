@@ -5,6 +5,13 @@
 .p-hero {
     position: relative;
 
+    &.-noimg {
+        padding: 15.2rem 2rem 6rem;
+        @include responsive(md) {
+            padding: 60.4rem 0 0;
+        }
+    }
+
     .l-section__title {
         @include responsive(md) {
             position: absolute;

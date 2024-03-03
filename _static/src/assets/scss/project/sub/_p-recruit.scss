@@ -1,0 +1,439 @@
+/* recruit
+----------------------------------------- */
+@use "../../global" as *;
+
+.p-recruit-message {
+    position: relative;
+    padding: rem(86) 0 rem(112) 0;
+
+    @include responsive(md) {
+        padding: rem(165) 0 rem(192) 0;
+    }
+
+    .p-loop-textWrap {
+        z-index: 2;
+        top: 13rem;
+        bottom: auto;
+
+        @include responsive(md) {
+            top: 20.8rem;
+        }
+    }
+    .p-loop-text {
+        span {
+            -webkit-text-stroke: 2px $color-accent;
+        }
+    }
+
+    &__title {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(20, 28, 400, 150, rem);
+
+        @include responsive(md) {
+            @include font(42, 56, 400, 150, rem);
+            text-align: right;
+        }
+    }
+    &__head {
+        width: 100vw;
+        margin: 8.8rem calc(50% - 50vw) 11.2rem;
+
+        @include responsive(md) {
+            margin: 16.8rem calc(50% - 50vw) 19.8rem;
+        }
+    }
+
+    &__headImg:first-child {
+        position: relative;
+        width: 79.48%;
+        margin: 0 0 0 auto;
+        overflow: hidden;
+
+        @include responsive(md) {
+            width: 52.7777%;
+        }
+    }
+
+    &__headImg:first-child:before {
+        display: block;
+        padding-top: 83.87%;
+        content: "";
+
+        @include responsive(md) {
+            padding-top: 63.68%;
+        }
+    }
+
+    &__headImg:nth-child(2) {
+        position: relative;
+        width: 57.43%;
+        margin: rem(64) auto 0 0;
+        overflow: hidden;
+
+        @include responsive(md) {
+            width: 33.3333%;
+            margin: -30.6rem auto 0 0;
+        }
+    }
+
+    &__headImg:nth-child(2):before {
+        display: block;
+        padding-top: 93.75%;
+        content: "";
+
+        @include responsive(md) {
+            padding-top: 80.21%;
+        }
+    }
+
+    &__headImg img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        object-fit: cover;
+        font-family: "object-fit: cover;";
+    }
+
+    &__inner {
+        position: relative;
+        padding: 0 0 rem(128) 0;
+
+        @include responsive(md) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 0 0 rem(96) 0;
+        }
+
+        .bg {
+            display: block;
+            position: absolute;
+            top: -21.8rem;
+            right: -2rem;
+            width: 88.57%;
+            height: calc(100% + 21.8rem);
+            background-color: #d9e3dd;
+            z-index: -1;
+
+            @include responsive(md) {
+                width: 75vw;
+                height: calc(100% + 10.2rem);
+                margin: 0 calc(50% - 50vw);
+                top: auto;
+                bottom: 0;
+            }
+        }
+
+        figure {
+            @include responsive(md) {
+                width: 46.15%;
+            }
+        }
+    }
+
+    &__desc {
+        margin-top: rem(24);
+
+        @include responsive(md) {
+            width: 34.13%;
+        }
+    }
+
+    &__parallax {
+        position: relative;
+        margin: rem(112) 0 0;
+        overflow: hidden;
+    }
+
+    // &__parallax:before {
+    //     display: block;
+    //     padding-top: 62.82%;
+    //     content: "";
+    // }
+}
+
+.p-recruit-faq {
+    &__list {
+        margin-top: rem(59);
+
+        @include responsive(md) {
+            width: 75%;
+            margin: rem(42) 0 0 auto;
+        }
+    }
+    &__item {
+        border-bottom: 1px solid #cbcbcb;
+        padding: rem(24) 0;
+        @include responsive(md) {
+            padding: rem(35) 0;
+        }
+    }
+
+    &__item:first-child {
+        border-top: 1px solid #cbcbcb;
+    }
+
+    &__title {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(14, 32, 500, 150, rem);
+        padding: 0 rem(52) 0 rem(35);
+        position: relative;
+
+        @include responsive(md) {
+            @include font(16, 32, 500, 150, rem);
+        }
+
+        .toggle {
+            width: rem(20);
+            height: rem(20);
+            position: absolute;
+            top: rem(7);
+            right: rem(16);
+        }
+
+        .toggle:before {
+            content: "";
+            display: block;
+            background: $color-text;
+            width: rem(20);
+            height: rem(1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .toggle:after {
+            content: "";
+            display: block;
+            background: $color-text;
+            width: rem(1);
+            height: rem(20);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__title:before {
+        content: "Q.";
+        display: block;
+        color: $color-accent;
+        font-family: $font-family-en;
+        @include font(22, 32, 600, 0, rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include responsive(md) {
+            @include font(28, 32, 600, 0, rem);
+        }
+    }
+
+    &__text {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(14, 32, 400, 150, rem);
+        padding: 0 rem(52) 0 rem(35);
+        margin-top: rem(24);
+        position: relative;
+
+        @include responsive(md) {
+            @include font(16, 32, 400, 150, rem);
+            margin-top: rem(35);
+        }
+    }
+
+    &__text:before {
+        content: "A.";
+        display: block;
+        color: $color-text;
+        font-family: $font-family-en;
+        @include font(22, 32, 600, 0, rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include responsive(md) {
+            @include font(28, 32, 600, 0, rem);
+        }
+    }
+}
+
+.p-recruit-desc {
+    padding: rem(112) 0 0 0;
+
+    @include responsive(md) {
+        padding: rem(192) 0 0 0;
+    }
+    &__tab {
+        padding: rem(59) 0 rem(91) 0;
+
+        @include responsive(md) {
+            padding: rem(82) 0 rem(192) 0;
+        }
+    }
+
+    &__menu {
+        display: flex;
+
+        @include responsive(md) {
+            width: 75%;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    &__item {
+        width: 33.3%;
+    }
+
+    &__link {
+        display: block;
+        background: #f0f0f0;
+        border: 1px solid #b4b4b4;
+        color: #b4b4b4;
+        font-family: $font-family-base;
+        @include font(15, 22, 600, 150, rem);
+        text-align: center;
+        padding: rem(15) 0;
+
+        @include responsive(md) {
+            @include font(18, 20, 600, 150, rem);
+            padding: rem(24) 0;
+        }
+
+        &.is-select {
+            background: $color-accent;
+            border: 1px solid $color-accent;
+            color: #fff;
+        }
+    }
+
+    &__content {
+        margin-top: rem(77);
+
+        @include responsive(md) {
+            margin-top: rem(119);
+        }
+
+        .l-section-list {
+            @include responsive(md) {
+                width: 75%;
+                margin: rem(85) 0 0 auto;
+            }
+        }
+    }
+
+    &__title {
+        color: $color-text;
+        font-family: $font-family-base;
+        @include font(20, 30, 400, 150, rem);
+        position: relative;
+        padding: 0 0 0 rem(18);
+
+        @include responsive(md) {
+            @include font(24, 36, 400, 150, rem);
+            padding: 0 0 0 rem(26);
+        }
+    }
+
+    &__title::before {
+        content: "";
+        display: block;
+        background: $color-accent;
+        border-radius: 50%;
+        width: rem(6);
+        height: rem(6);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include responsive(md) {
+            top: rem(8);
+            width: rem(10);
+            height: rem(10);
+        }
+    }
+}
+
+.p-recruit-form {
+    padding-bottom: rem(112);
+
+    @include responsive(md) {
+        padding-bottom: rem(192);
+    }
+
+    &__inner {
+        z-index: 2;
+        position: relative;
+        margin: 0 0 -9rem 0;
+
+        @include responsive(md) {
+            width: 69.23%;
+            margin: 0 auto -9rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        background: $color-accent;
+        padding: rem(32);
+
+        @include responsive(md) {
+            padding: rem(90) rem(80);
+        }
+
+        .l-section__subTitle {
+            color: #fff;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        .c-link__wrap {
+            margin-top: rem(28);
+        }
+    }
+
+    &__bg {
+        position: relative;
+        width: 100vw;
+        margin: 0 calc(50% - 50vw);
+        figure {
+            position: relative;
+            overflow: hidden;
+            picture {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        figure::before {
+            display: block;
+            content: "";
+        }
+    }
+
+    &__bg::before {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        background-color: #182f20;
+        content: "";
+        opacity: 0.7;
+    }
+}

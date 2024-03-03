@@ -1,0 +1,14 @@
+/* fixed-bg
+----------------------------------------- */
+@use "../global" as *;
+
+.p-fixed-bg {
+    &__wrap {
+        // height: 100vh;
+        // position: relative;
+    }
+
+    &__area {
+        position: relative;
+    }
+}
