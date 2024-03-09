@@ -4,12 +4,12 @@
 
 .p-home-catch {
     position: absolute;
-    top: rem(180);
+    bottom: rem(58);
     left: rem(-40);
     z-index: 2;
 
     @include responsive(md) {
-        top: rem(337);
+        bottom: rem(70);
         left: rem(-180);
     }
 
@@ -84,8 +84,8 @@
     }
 }
 
-.p-home-catch__text {
-    &.is-loaded {
-        opacity: 1;
-    }
-}
+// .p-home-catch__text {
+//     &.is-loaded {
+//         opacity: 1;
+//     }
+// }

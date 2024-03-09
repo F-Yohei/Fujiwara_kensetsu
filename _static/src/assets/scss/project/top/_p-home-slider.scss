@@ -55,10 +55,10 @@
         color: #88b999;
         font-family: $font-family-en;
         @include font(32, 37, 600, 0 rem);
-        opacity: 1;
+        opacity: 0;
         transform: translate(0, 0);
-        @include responsive(lg2) {
-            @include font(80, 92, 600, 0, rem);
+        @include responsive(md) {
+            @include font(80, 150, 600, 0, rem);
         }
     }
 
@@ -162,8 +162,21 @@
 .p-home-slider__container .swiper-slide-duplicate-active .slide-img,
 .p-home-slider__container .swiper-slide-prev .slide-img {
     animation: zoomUp 5s linear 0s;
-
     animation-fill-mode: both;
+}
+
+.p-home-sliderText__slide {
+    &.swiper-slide-active {
+        .p-home-slider__text {
+            .p-home-slider__eng {
+                .p-home-slider__engWrap {
+                    .p-home-slider__engText {
+                        animation: slideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s forwards;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @keyframes slide {

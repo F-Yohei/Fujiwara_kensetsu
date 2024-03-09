@@ -4,40 +4,40 @@
 //
 // 汎用モジュール
 //
-@use 'component';
+@use "component";
 
 // External
 //
 // 外部ライブラリ上書き用
 //
-@use 'external';
+@use "external";
 
 // foundation
 //
 // ベース系
 //
-@use 'foundation';
+@use "foundation";
 
 // layout
 //
 // レイアウト
 //
-@use 'layout';
+@use "layout";
 
 // project
 //
 // 専用モジュール
 //
-@use 'project';
+@use "project";
 
 // utility
 //
 // 調整
 //
-@use 'utility';
+@use "utility";
 
 // vendors
 //
 // 外部ライブラリ読み込み
 //
-@use 'vendors';
+@use "vendors";

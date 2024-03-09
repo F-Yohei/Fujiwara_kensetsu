@@ -15,16 +15,17 @@
    <!-- apple-touch-icon -->
    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
    <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
    <!-- style.css -->
    <link rel="stylesheet" href="../assets/css/style.css" />
    <!-- Remove "outline" when in focus(other than keyboard operation) -->
+   <!-- jQuery -->
+   <script src="../assets/js/jquery-3.7.1.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js" integrity="sha384-xRa5B8rCDfdg0npZcxAh+RXswrbFk3g6dlHVeABeluN8EIwdyljz/LqJgc2R3KNA" crossorigin="anonymous" defer></script>
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-   <script src="../assets/js/gsap.min.js"></script>
-   <script src="../assets/js/ScrollTrigger.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
  </head>
- <body class="subpage">
+ <body class="subpage service">
    <div class="wrap" ontouchstart="">
      <!-- header -->
      <header id="js-header" class="l-header">
@@ -107,10 +108,10 @@
            <div class="l-menu-button">
              <ul class="l-menu-button__list">
                <li class="l-menu-button__item">
-                 <a href="#" class="l-menu-button__link -recruit">RECRUIT</a>
+                 <a href="../recruit" class="l-menu-button__link -recruit">RECRUIT</a>
                </li>
                <li class="l-menu-button__item">
-                 <a href="#" class="l-menu-button__link -contact">CONTACT</a>
+                 <a href="../contact" class="l-menu-button__link -contact">CONTACT</a>
                </li>
              </ul>
            </div>
@@ -135,7 +136,7 @@
      <!-- /header -->
      <!-- main -->
      <main id="top" class="l-main">
-       <article class="l-section">
+       <article>
          <div id="js-top" class="p-hero">
            <h2 class="l-section__title js-title load">
              <span class="l-section__titleTextWrap"><span class="l-section__titleText">S</span><span class="l-section__titleText">e</span><span class="l-section__titleText">r</span><span class="l-section__titleText">v</span><span class="l-section__titleText">i</span><span class="l-section__titleText">c</span><span class="l-section__titleText">e</span></span><span class="-jp">事業内容</span>
@@ -151,14 +152,14 @@
          </div>
          <nav class="c-breadcrumbs" aria-label="breadcrumb">
            <div class="l-container">
-             <ul class="c-breadcrumbs__list">
+             <ol class="c-breadcrumbs__list">
                <li class="c-breadcrumbs__item">
                  <a href="../" class="c-breadcrumbs__link">TOP</a>
                </li>
                <li class="c-breadcrumbs__item">
-                 <a href="../company" class="c-breadcrumbs__link" aria-current="page">事業内容</a>
+                 <a href="../service" class="c-breadcrumbs__link" aria-current="page">事業内容</a>
                </li>
-             </ul>
+             </ol>
            </div>
          </nav>
          <!-- sec-service -->
@@ -277,22 +278,22 @@
            <nav class="l-footer__nav">
              <ul class="l-footer__navList">
                <li class="l-footer__navItem">
-                 <a href="#" class="l-footer__navLink">COMPANY</a>
+                 <a href="../company" class="l-footer__navLink">COMPANY</a>
                </li>
                <li class="l-footer__navItem">
-                 <a href="#" class="l-footer__navLink">SERVICE</a>
+                 <a href="../service" class="l-footer__navLink">SERVICE</a>
                </li>
                <li class="l-footer__navItem">
-                 <a href="#" class="l-footer__navLink">WORKS</a>
+                 <a href="../works" class="l-footer__navLink">WORKS</a>
                </li>
                <li class="l-footer__navItem">
-                 <a href="#" class="l-footer__navLink">NEWS</a>
+                 <a href="../news" class="l-footer__navLink">NEWS</a>
                </li>
                <li class="l-footer__navItem">
-                 <a href="#" class="l-footer__navLink">CONTACT</a>
+                 <a href="../contact" class="l-footer__navLink">CONTACT</a>
                </li>
                <li class="l-footer__navItem">
-                 <a href="#" class="l-footer__navLink">RECRUIT</a>
+                 <a href="../recruit" class="l-footer__navLink">RECRUIT</a>
                </li>
              </ul>
            </nav>
@@ -333,12 +334,10 @@
      </script>
      <!-- polyfill(picture IE) -->
      <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
-     <!-- jQuery -->
-     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-     <script src="../assets/js/gsap.min.js"></script>
-     <script src="../assets/js/ScrollTrigger.min.js"></script>
-     <!-- swiper.js -->
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <!-- gsap.min.js -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     <!-- ScrollTrigger.min.js -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
      <!-- service.bundle.js -->
      <script src="../assets/js/service.bundle.js"></script>
    </div>

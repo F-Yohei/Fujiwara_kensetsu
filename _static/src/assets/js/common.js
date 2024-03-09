@@ -15,6 +15,7 @@ require("./modules/homeSlider");
 require("./modules/sliderCursor");
 require("./modules/slideNumber");
 require("./modules/homeCatch");
+require("./modules/fixedService");
 
 $(function () {
   var headerHeight = $(".l-header").outerHeight(); // ヘッダーのクラス

@@ -1,3 +1,8 @@
+// ローディング時のアニメーション
+$(window).on("load", function () {
+  $(".load").addClass("is-anim");
+});
+
 $(window).scroll(function () {
   $(".inview").each(function () {
     var hit = $(this).offset().top;
