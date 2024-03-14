@@ -3,6 +3,7 @@
 @use "../global" as *;
 
 .p-hero {
+    padding: rem(152) rem(20) 0;
     position: relative;
 
     &.-noimg {

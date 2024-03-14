@@ -11,6 +11,11 @@ module.exports = {
   entry: {
     common: path.join(__dirname, '_static', 'src', 'assets', 'js', 'common.js'),
     top: path.join(__dirname, '_static', 'src', 'assets', 'js', 'top.js'),
+    service: path.join(__dirname, '_static', 'src', 'assets', 'js', 'service.js'),
+    works: path.join(__dirname, '_static', 'src', 'assets', 'js', 'works.js'),
+    worksdetail: path.join(__dirname, '_static', 'src', 'assets', 'js', 'worksdetail.js'),
+    news: path.join(__dirname, '_static', 'src', 'assets', 'js', 'news.js'),
+    recruit: path.join(__dirname, '_static', 'src', 'assets', 'js', 'recruit.js'),
   },
 
   // ファイルの出力設定

@@ -5,6 +5,7 @@
 .p-home-loop {
     background: #fff;
     padding-bottom: rem(72);
+    overflow: hidden;
 
     @include responsive(md) {
         padding-top: rem(120);

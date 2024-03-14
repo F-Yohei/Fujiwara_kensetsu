@@ -1,4 +1,8 @@
 <% let path = jsonData.pages[pageId].path %>
+<!-- gsap.min.js -->
+<script src="<%= path %>assets/js/gsap.min.js"></script>
+<!-- ScrollTrigger.min.js -->
+<script src="<%= path %>assets/js/ScrollTrigger.min.js"></script>
 <!-- common.bundle.js -->
 <script src="<%= path %>assets/js/common.bundle.js"></script>
 <!-- IE object-fit -->
@@ -8,7 +12,3 @@
 </script>
 <!-- polyfill(picture IE) -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
-<!-- gsap.min.js -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<!-- ScrollTrigger.min.js -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

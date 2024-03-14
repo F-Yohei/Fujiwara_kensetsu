@@ -1,24 +1,16 @@
 import jQuery from "jquery";
 const $ = jQuery;
 
-require("./modules/headerMove");
+require("./modules/header");
 require("./modules/humburgerBtn");
-require("./modules/mvHeight");
-require("./modules/loading");
-require("./modules/subMenu");
-require("./modules/kvOverlay");
-require("./modules/fixedButton");
 require("./modules/parallaxImg");
-require("./modules/triggerAnimation");
 require("./modules/sectionTitle");
-require("./modules/homeSlider");
-require("./modules/sliderCursor");
-require("./modules/slideNumber");
-require("./modules/homeCatch");
-require("./modules/fixedService");
+require("./modules/subMenu");
+require("./modules/triggerAnimation");
 
+// smooth scroll
 $(function () {
-  var headerHeight = $(".l-header").outerHeight(); // ヘッダーのクラス
+  var headerHeight = $(".l-header").outerHeight();
   var urlHash = location.hash;
   if (urlHash) {
     $("body,html").stop().scrollTop(0);

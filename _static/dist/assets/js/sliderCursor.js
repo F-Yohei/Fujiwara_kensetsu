@@ -2,10 +2,10 @@
   TOP Worksのマウスストーカー
 ==============================================================*/
 
-const cursor = document.getElementById("js-cursor"),
-  chaser = document.getElementById("js-chaser"),
-  target = document.querySelector(".p-home-works__sliderTrack"),
-  body = document.querySelector(".js-body");
+const cursor = document.getElementById('js-cursor'),
+  chaser = document.getElementById('js-chaser'),
+  target = document.querySelector('.p-home-works__sliderTrack'),
+  body = document.querySelector('.js-body');
 let delay = 10,
   cursorPosX = 0,
   cursorPosY = 0,
@@ -43,14 +43,14 @@ document.onmousemove = function (event) {
 
 // マウスオーバー時の処理
 target.onmouseover = function () {
-  cursor.classList.add("is-active");
-  chaser.classList.add("is-active");
-  body.classList.add("is-active");
+  cursor.classList.add('is-active');
+  chaser.classList.add('is-active');
+  body.classList.add('is-active');
 };
 
 // マウスアウト時の処理
 target.onmouseout = function () {
-  cursor.classList.remove("is-active");
-  chaser.classList.remove("is-active");
-  body.classList.remove("is-active");
+  cursor.classList.remove('is-active');
+  chaser.classList.remove('is-active');
+  body.classList.remove('is-active');
 };

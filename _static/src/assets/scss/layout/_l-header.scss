@@ -2,12 +2,22 @@
 ----------------------------------------- */
 @use "../global" as *;
 
+body {
+  &.subpage {
+    .l-header {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 .l-header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 6;
   width: 100%;
+  height: rem(70);
   padding: rem(20);
   @include flex(space-between, center, row);
   opacity: 0;

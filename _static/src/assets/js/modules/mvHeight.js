@@ -1,9 +1,14 @@
+/*==============================================================
+  mvHeight
+  ・スマホで高さを100vhにした時にバーを含まないように
+==============================================================*/
+
 import jQuery from 'jquery';
 const $ = jQuery;
 
 $(window).on('resize load', function () {
   var w = $(window).width();
-  var x = 1200;
+  var x = 1440;
   if (w <= x) {
     var MVHEIGHT = MVHEIGHT || {};
     MVHEIGHT.VIEW_HEIGHT = {

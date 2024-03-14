@@ -1,10 +1,16 @@
-// hamburger btn
-const hamburgerToggle = document.getElementById("js-hamburger-toggle");
-const menu = document.getElementById("js-menu");
-const menuBg = document.getElementById("js-menu-bg");
+import jQuery from 'jquery';
+const $ = jQuery;
 
-hamburgerToggle.addEventListener("click", function () {
-  hamburgerToggle.classList.toggle("is-active");
-  menu.classList.toggle("is-active");
-  menuBg.classList.toggle("is-active");
+/*==============================================================
+  humburgerBtn
+  ・ハンバーガーボタン
+==============================================================*/
+const hamburgerToggle = document.getElementById('js-hamburger-toggle');
+const menu = document.getElementById('js-menu');
+const body = document.getElementById('js-body');
+
+hamburgerToggle.addEventListener('click', function () {
+  hamburgerToggle.classList.toggle('is-active');
+  menu.classList.toggle('is-active');
+  body.classList.toggle('is-active');
 });

@@ -27,7 +27,6 @@ const itemSwitch = (progress) => {
     }
   });
   panelImg.forEach((img, index) => {
-    console.log(img);
     if (index == clampVal) {
       img.classList.add("is-active");
     } else {

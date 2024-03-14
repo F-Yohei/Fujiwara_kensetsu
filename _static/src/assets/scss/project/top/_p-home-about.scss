@@ -46,9 +46,10 @@
     }
 
     figure {
+        overflow: hidden;
+
         @include responsive(md) {
             position: relative;
-            overflow: hidden;
         }
     }
 

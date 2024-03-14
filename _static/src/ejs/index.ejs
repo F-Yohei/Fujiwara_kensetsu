@@ -715,7 +715,12 @@
     </main>
     <!-- /main -->
   </div>
-  <%- include('./common/_footer', {pageId:pageId }) %> <%- include('./common/_script', {pageId:pageId }) %> <%- include('./common/script/_script-top', {pageId:pageId }) %>
+  <%- include('./common/_footer', {pageId:pageId }) %>
+  <!-- TweenMax.min.js -->
+  <script src="<%= path %>assets/js/TweenMax.min.js"></script>
+  <!-- sliderCursor.js -->
+  <script src="<%= path %>assets/js/sliderCursor.js"></script>
+  <%- include('./common/_script', {pageId:pageId }) %>
+  <%- include('./common/script/_script-top', {pageId:pageId }) %>
 </body>
-
 </html>

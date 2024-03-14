@@ -947,23 +947,23 @@ body.subpage .l-footer__contact {
   -webkit-transition: all 0.5s ease;
   display: block;
   z-index: 3;
-  width: 4.6rem;
-  height: 3.9rem;
+  width: 5rem;
+  height: 4.4rem;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 .l-hamburger__toggle.is-active .l-hamburger__toggleWrap span:nth-of-type(1) {
-  -webkit-transform: translateY(0.9rem) rotate(-45deg);
-          transform: translateY(0.9rem) rotate(-45deg);
+  -webkit-transform: translateY(1.1rem) rotate(-45deg);
+          transform: translateY(1.1rem) rotate(-45deg);
 }
 .l-hamburger__toggle.is-active .l-hamburger__toggleWrap span:nth-of-type(2) {
   opacity: 0;
 }
 .l-hamburger__toggle.is-active .l-hamburger__toggleWrap span:nth-of-type(3) {
-  -webkit-transform: translateY(-0.9rem) rotate(45deg);
+  -webkit-transform: translateY(-1.1rem) rotate(45deg);
   width: 3rem;
-          transform: translateY(-0.9rem) rotate(45deg);
+          transform: translateY(-1.1rem) rotate(45deg);
 }
 .l-hamburger__toggle:hover {
   opacity: 1;
@@ -991,9 +991,9 @@ body.subpage .l-footer__contact {
 }
 .l-hamburger__toggleWrap span:nth-of-type(2) {
   -webkit-transition: all 0.5s ease;
-  top: 0.9rem;
+  top: 1.1rem;
   left: 0;
-  width: 2.5rem;
+  width: 2.25rem;
   transition: all 0.5s ease;
 }
 .l-hamburger__toggleWrap span:nth-of-type(3) {
@@ -1004,6 +1004,12 @@ body.subpage .l-footer__contact {
 
 /* header
 ----------------------------------------- */
+body.subpage .l-header {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .l-header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1022,6 +1028,7 @@ body.subpage .l-footer__contact {
           align-items: center;
           justify-content: space-between;
   width: 100%;
+  height: 7rem;
   padding: 2rem;
           transform: translateY(-4rem);
   opacity: 0;
@@ -1982,6 +1989,9 @@ body.subpage .l-footer__contact {
   position: relative;
   margin-top: 3.2rem;
 }
+.p-home-about figure {
+  overflow: hidden;
+}
 .p-home-about__container {
   padding: 10.6rem 2rem 0;
 }
@@ -2115,6 +2125,7 @@ body.subpage .l-footer__contact {
 .p-home-works {
   position: relative;
   padding: 3.6rem 0 11.4rem;
+  overflow: hidden;
   background-color: #fff;
 }
 .p-home-works::before {
@@ -2522,6 +2533,9 @@ body.subpage .l-footer__contact {
 .p-home-recruit__descWrapper {
   margin-top: 3.4rem;
 }
+.p-home-recruit figure {
+  overflow: hidden;
+}
 .p-home-recruit figure img {
   width: 100%;
 }
@@ -2566,6 +2580,7 @@ body.subpage .l-footer__contact {
 ----------------------------------------- */
 .p-home-loop {
   padding-bottom: 7.2rem;
+  overflow: hidden;
   background: #fff;
 }
 .p-home-loop__list {
@@ -3633,6 +3648,7 @@ body.subpage .l-footer__contact {
 ----------------------------------------- */
 .p-hero {
   position: relative;
+  padding: 15.2rem 2rem 0;
 }
 .p-hero.-noimg {
   padding: 15.2rem 2rem 6rem;
@@ -3913,7 +3929,7 @@ body.subpage .l-footer__contact {
             transform: translate3d(-50%, 20rem, 0);
   }
 }
-/* p-loading
+/* loadgin
 ----------------------------------------- */
 .p-loading {
   display: block;
@@ -5550,7 +5566,6 @@ button.swiper-pagination-bullet {
   }
   .p-home-about figure {
     position: relative;
-    overflow: hidden;
   }
   .p-home-about__img {
     position: relative;
@@ -5795,7 +5810,6 @@ button.swiper-pagination-bullet {
   }
   .p-home-recruit figure {
     position: relative;
-    overflow: hidden;
   }
   .p-home-video {
     position: relative;

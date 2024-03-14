@@ -6,6 +6,7 @@
     background-color: #fff;
     padding: rem(36) 0 rem(114);
     position: relative;
+    overflow: hidden;
 
     @include responsive(md) {
         overflow-y: hidden;

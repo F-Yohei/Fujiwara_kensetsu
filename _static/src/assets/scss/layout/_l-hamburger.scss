@@ -5,8 +5,8 @@
 .l-hamburger__toggle {
   z-index: 3;
   display: block;
-  width: rem(46);
-  height: rem(39);
+  width: rem(50);
+  height: rem(44);
   padding: rem(10);
   cursor: pointer;
   transition: all 0.5s ease;
@@ -19,14 +19,14 @@
     .l-hamburger__toggleWrap {
       span {
         &:nth-of-type(1) {
-          transform: translateY(0.9rem) rotate(-45deg);
+          transform: translateY(1.1rem) rotate(-45deg);
         }
         &:nth-of-type(2) {
           opacity: 0;
         }
         &:nth-of-type(3) {
-          transform: translateY(-0.9rem) rotate(45deg);
           width: rem(30);
+          transform: translateY(-1.1rem) rotate(45deg);
         }
       }
     }
@@ -53,10 +53,10 @@
       left: 0;
     }
     &:nth-of-type(2) {
-      top: rem(9);
+      top: rem(11);
       left: 0;
+      width: rem(22.5);
       transition: all 0.5s ease;
-      width: rem(25);
     }
     &:nth-of-type(3) {
       bottom: 0;
