@@ -32,6 +32,13 @@
         @include responsive(md) {
             width: 30.769%;
         }
+
+        &.is-hidden {
+            height: 0;
+            margin: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
     }
 
     &__item:not(:first-child) {
@@ -46,6 +53,10 @@
         @include responsive(md) {
             margin-top: rem(68);
         }
+    }
+
+    &__item:not(:nth-child(3n)) {
+        margin-right: rem(40);
     }
 
     &__link {
@@ -76,7 +87,7 @@
         }
     }
 
-    &__Link:hover {
+    &__link:hover {
         figure {
             img {
                 transform: scale(1.1);

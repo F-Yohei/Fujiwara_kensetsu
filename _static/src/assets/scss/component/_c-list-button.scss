@@ -18,8 +18,17 @@
     font-family: $font-family-en;
     @include font(15, 20, 400, 0, rem);
     padding: rem(20) rem(35);
+    transition: border 0.5s ease;
 
     @include responsive(md) {
         @include font(20, 20, 400, 0, rem);
+    }
+
+    &:hover {
+        border: 1px solid $color-text;
+    }
+
+    &.is-btn-hidden {
+        display: none;
     }
 }
