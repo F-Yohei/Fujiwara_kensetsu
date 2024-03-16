@@ -1,0 +1,9 @@
+/* parallax
+----------------------------------------- */
+@use '../global' as *;
+
+.p-parallax__bg {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}

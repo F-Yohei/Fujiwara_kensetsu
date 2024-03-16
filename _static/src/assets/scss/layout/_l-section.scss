@@ -79,6 +79,7 @@
     color: $color-text;
     font-family: $font-family-en;
     @include font(28, 42, 600, 0, rem);
+    transition: color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
     @include responsive(md) {
         @include font(36, 42, 600, 0, rem);
     }
@@ -88,6 +89,7 @@
         color: $color-accent;
         font-family: $font-family-base;
         @include font(12, 10, 500, 150, rem);
+        transition: color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 
         @include responsive(md) {
             @include font(14, 10, 500, 150, rem);

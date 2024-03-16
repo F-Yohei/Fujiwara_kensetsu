@@ -1,0 +1,44 @@
+/* fixed
+----------------------------------------- */
+@use '../global' as *;
+
+.p-fixed-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  @include responsive(md) {
+    display: none;
+  }
+  &.is-active {
+    opacity: 1;
+  }
+}
+
+.p-fixed-button__list {
+  @include flex(center, center, row);
+}
+
+.p-fixed-button__item {
+  width: 33.333333%;
+}
+
+.p-fixed-button__link {
+  display: block;
+  padding: rem(20) 0;
+  color: #fff;
+  text-align: center;
+  &.-entry {
+    background-color: #88b999;
+  }
+  &.-recruit {
+    background-color: $color-text;
+  }
+  &.-contact {
+    background-color: #ebc110;
+  }
+}

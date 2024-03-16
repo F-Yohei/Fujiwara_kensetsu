@@ -1,0 +1,37 @@
+/* pageTop
+----------------------------------------- */
+@use '../global' as *;
+
+.p-pageTop {
+  position: absolute;
+  right: rem(40);
+  bottom: rem(120);
+
+  @include responsive(md) {
+    right: rem(80);
+    bottom: rem(94);
+  }
+  a {
+    display: block;
+    .circle {
+      position: relative;
+      width: rem(50);
+      height: rem(50);
+      border: 1px solid #fff;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0);
+      .arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: rem(9);
+        height: rem(14);
+        background-image: url(../images/common/page_top_arrow.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%) rotateZ(-90deg);
+      }
+    }
+  }
+}

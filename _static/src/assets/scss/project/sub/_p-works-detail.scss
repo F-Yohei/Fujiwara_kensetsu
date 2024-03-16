@@ -176,6 +176,7 @@
 
             .arrow {
                 background-image: url(../images/common/link_arrow_black.svg);
+                transition: background-image 0.5s cubic-bezier(0.33, 1, 0.68, 1);
             }
         }
     }
@@ -189,9 +190,60 @@
         justify-content: space-between;
         align-items: center;
         padding: rem(40) 0;
+        transition: background-color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 
         @include responsive(md) {
-            padding: rem(58) 0;
+            padding: rem(58) rem(40) rem(58) rem(24);
+        }
+
+        &:hover {
+            .l-section__subTitle {
+                @include responsive(md) {
+                    color: #fff;
+                }
+                span {
+                    color: $color-text;
+
+                    @include responsive(md) {
+                        color: #fff;
+                    }
+                }
+            }
+            > .c-link {
+                .circle {
+                    @include responsive(md) {
+                        border: 1px solid #fff;
+                        transform: scale(1.2);
+                    }
+                    .arrow {
+                        @include responsive(md) {
+                            background-image: url(../images/common/link_arrow_white.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.-archi {
+            &:hover {
+                @include responsive(md) {
+                    background-color: $color-accent;
+                }
+            }
+        }
+        &.-civil {
+            &:hover {
+                @include responsive(md) {
+                    background-color: #ebc110;
+                }
+            }
+        }
+        &.-housing {
+            &:hover {
+                @include responsive(md) {
+                    background-color: #182f20;
+                }
+            }
         }
     }
 }
