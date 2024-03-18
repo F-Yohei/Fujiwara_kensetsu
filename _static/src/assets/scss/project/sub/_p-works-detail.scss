@@ -15,6 +15,9 @@
 
         @include responsive(md) {
             display: block;
+            height: 100vh;
+            padding: rem(300) 0 0;
+            margin: rem(-300) 0 0;
             position: sticky;
             top: 0;
         }
@@ -28,15 +31,29 @@
 
     &__link {
         display: block;
+        position: relative;
 
         @include responsive(md) {
             color: #cbcbcb;
             font-family: $font-family-base;
             @include font(20, 22, 600, 150, rem);
+            padding: 0 0 0 rem(24);
         }
 
         &.is-active {
             color: $color-text;
+        }
+
+        &.is-active::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 0.8rem;
+            height: 0.8rem;
+            transform: translate(0%, -50%);
+            border-radius: 50%;
+            background-color: #88b999;
+            content: "";
         }
     }
 

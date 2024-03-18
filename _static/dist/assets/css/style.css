@@ -497,8 +497,6 @@
   background-image: url(../images/common/pagination_arrow_next.svg);
 }
 
-/* swiper
------------------------------------------ */
 /* glightbox
 ----------------------------------------- */
 .goverlay {
@@ -2874,9 +2872,22 @@ body.service .c-breadcrumbs {
 }
 .p-works-detail__link {
   display: block;
+  position: relative;
 }
 .p-works-detail__link.is-active {
   color: #111;
+}
+.p-works-detail__link.is-active::before {
+  -webkit-transform: translate(0%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+          transform: translate(0%, -50%);
+  border-radius: 50%;
+  background-color: #88b999;
+  content: "";
 }
 .p-works-detail__title {
   color: #111;
@@ -4475,237 +4486,6 @@ body.service .c-breadcrumbs {
   padding: 1em 0;
 }
 
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
-
-/* Icons */
-/* Arrows */
-.slick-prev,
-.slick-next {
-  -webkit-transform: translate(0, -50%);
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  transform: translate(0, -50%);
-  border: none;
-  outline: none;
-  background: transparent;
-  color: transparent;
-  font-size: 0px;
-  line-height: 0px;
-  cursor: pointer;
-}
-.slick-prev:hover, .slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  outline: none;
-  background: transparent;
-  color: transparent;
-}
-.slick-prev:hover:before, .slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 0.25;
-}
-.slick-prev:before,
-.slick-next:before {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
-  font-size: 20px;
-  line-height: 1;
-  font-family: "./slick-carousel/slick";
-  opacity: 0.75;
-}
-
-.slick-prev {
-  left: -25px;
-}
-[dir=rtl] .slick-prev {
-  right: -25px;
-  left: auto;
-}
-.slick-prev:before {
-  content: "←";
-}
-[dir=rtl] .slick-prev:before {
-  content: "→";
-}
-
-.slick-next {
-  right: -25px;
-}
-[dir=rtl] .slick-next {
-  right: auto;
-  left: -25px;
-}
-.slick-next:before {
-  content: "→";
-}
-[dir=rtl] .slick-next:before {
-  content: "←";
-}
-
-/* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
-.slick-dots {
-  display: block;
-  position: absolute;
-  bottom: -25px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-.slick-dots li {
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-.slick-dots li button {
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  border: 0;
-  outline: none;
-  background: transparent;
-  color: transparent;
-  font-size: 0px;
-  line-height: 0px;
-  cursor: pointer;
-}
-.slick-dots li button:hover, .slick-dots li button:focus {
-  outline: none;
-}
-.slick-dots li button:hover:before, .slick-dots li button:focus:before {
-  opacity: 1;
-}
-.slick-dots li button:before {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: "•";
-  color: black;
-  font-size: 6px;
-  line-height: 20px;
-  font-family: "./slick-carousel/slick";
-  text-align: center;
-  opacity: 0.25;
-}
-.slick-dots li.slick-active button:before {
-  color: black;
-  opacity: 0.75;
-}
-
-/* Slider */
-.slick-slider {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  touch-action: pan-y;
-  user-select: none;
-}
-
-.slick-list {
-  display: block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.slick-list:focus {
-  outline: none;
-}
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-.slick-track:before, .slick-track:after {
-  display: table;
-  content: "";
-}
-.slick-track:after {
-  clear: both;
-}
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  display: none;
-  height: 100%;
-  min-height: 1px;
-  float: left;
-}
-[dir=rtl] .slick-slide {
-  float: right;
-}
-.slick-slide img {
-  display: block;
-}
-.slick-slide.slick-loading img {
-  display: none;
-}
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
-
 /**
  * Swiper 5.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -6012,11 +5792,15 @@ button.swiper-pagination-bullet {
     display: block;
     position: sticky;
     top: 0;
+    height: 100vh;
+    margin: -30rem 0 0;
+    padding: 30rem 0 0;
   }
   .p-works-detail__item:not(:first-child) {
     margin-top: 3.3rem;
   }
   .p-works-detail__link {
+    padding: 0 0 0 2.4rem;
     color: #cbcbcb;
     font-weight: 600;
     font-size: 2rem;
