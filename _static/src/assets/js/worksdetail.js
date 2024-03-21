@@ -3,4 +3,4 @@ const $ = jQuery;
 
 require("./modules/worksLightbox");
 require("./modules/worksSticky");
-require("./modules/worksCursor");
+// require("./modules/worksCursor");
