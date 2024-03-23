@@ -170,13 +170,37 @@
     &__item {
         border-bottom: 1px solid #cbcbcb;
         padding: rem(24) 0;
+        cursor: pointer;
         @include responsive(md) {
             padding: rem(35) 0;
         }
-    }
 
-    &__item:first-child {
-        border-top: 1px solid #cbcbcb;
+        .p-recruit-faq__title {
+            &.close {
+                .toggle {
+                    &:after {
+                        opacity: 0;
+                        transform: translate(-50%, -50%) rotateZ(90deg);
+                    }
+                }
+            }
+            &.open {
+                .toggle {
+                    &::after {
+                        opacity: 1;
+                        transform: translate(-50%, -50%) rotateZ(0deg);
+                    }
+                }
+            }
+        }
+
+        &:first-child {
+            border-top: 1px solid #cbcbcb;
+
+            .p-recruit-faq__text {
+                display: block;
+            }
+        }
     }
 
     &__title {
@@ -220,6 +244,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            transition:
+                transform 0.5s ease,
+                opacity 0.5s ease;
         }
     }
 
@@ -239,6 +266,7 @@
     }
 
     &__text {
+        display: none;
         color: $color-text;
         font-family: $font-family-base;
         @include font(14, 32, 400, 150, rem);
@@ -318,6 +346,7 @@
     }
 
     &__content {
+        display: none;
         margin-top: rem(77);
 
         @include responsive(md) {
@@ -329,6 +358,9 @@
                 width: 75%;
                 margin: rem(85) 0 0 auto;
             }
+        }
+        &.is-select {
+            display: block;
         }
     }
 
@@ -422,18 +454,18 @@
             display: block;
             content: "";
         }
-    }
 
-    &__bg::before {
-        z-index: 1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        background-color: #182f20;
-        content: "";
-        opacity: 0.7;
+        &::before {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            background-color: #182f20;
+            content: "";
+            opacity: 0.7;
+        }
     }
 }
