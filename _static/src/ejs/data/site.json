@@ -12,21 +12,21 @@
       "path": "./"
     },
     "company": {
-      "name": "Company",
+      "name": "会社情報",
       "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "article",
       "slug": "company/index.html",
       "path": "../"
     },
     "service": {
-      "name": "Service",
+      "name": "事業内容",
       "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "article",
       "slug": "service/index.html",
       "path": "../"
     },
     "works": {
-      "name": "Works",
+      "name": "施工実績",
       "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "article",
       "slug": "works/index.html",
@@ -40,7 +40,7 @@
       "path": "../../"
     },
     "news": {
-      "name": "News",
+      "name": "新着情報",
       "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "article",
       "slug": "news/index.html",
@@ -61,7 +61,7 @@
       "path": "../"
     },
     "contact": {
-      "name": "Contact",
+      "name": "お問合せ",
       "description": "「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。",
       "type": "article",
       "slug": "contact/index.html",

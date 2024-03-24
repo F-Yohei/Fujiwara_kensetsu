@@ -3539,6 +3539,20 @@ body.service .c-breadcrumbs {
 .p-recruit-form__link .c-link__wrap {
   margin-top: 2.8rem;
 }
+.p-recruit-form__link:hover .circle {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.p-recruit-form__link:hover .circle .arrow:nth-child(1) {
+  -webkit-transform: translate(150%, -50%);
+          transform: translate(150%, -50%);
+  opacity: 0;
+}
+.p-recruit-form__link:hover .circle .arrow:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
 .p-recruit-form__bg {
   position: relative;
   width: 100vw;
@@ -6163,6 +6177,12 @@ button.swiper-pagination-bullet {
     margin: 0 auto -9rem;
   }
   .p-recruit-form__link {
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    display: flex;
+            align-items: center;
+            justify-content: space-between;
     padding: 9rem 8rem;
   }
   .p-contact {

@@ -420,6 +420,9 @@
         padding: rem(32);
 
         @include responsive(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: rem(90) rem(80);
         }
 
@@ -433,6 +436,22 @@
 
         .c-link__wrap {
             margin-top: rem(28);
+        }
+
+        &:hover {
+            .circle {
+                transform: scale(1.2);
+                .arrow {
+                    &:nth-child(1) {
+                        opacity: 0;
+                        transform: translate(150%, -50%);
+                    }
+                    &:nth-child(2) {
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
         }
     }
 

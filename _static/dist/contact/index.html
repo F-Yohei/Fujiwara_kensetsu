@@ -6,7 +6,7 @@
    <meta name="format-detection" content="email=no, telephone=no, address=no" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta name="robots" content="noindex,nofollow" />
-   <title>News | 藤原建設工業株式会社</title>
+   <title>お問合せ | 藤原建設工業株式会社</title>
    <meta name="description" content="「過去と未来を繋ぎ続ける」そんな会社を目指す技術集団が、藤原建設工業です。" />
    <meta name="keywords" content="" />
    <link rel="canonical" href="./" />
@@ -49,7 +49,7 @@
          <nav id="js-menu" class="l-menu">
            <ul class="l-menu__list">
              <li class="l-menu__item">
-               <a href="#" class="l-menu__link">TOP</a>
+               <a href="../" class="l-menu__link">TOP</a>
              </li>
              <li class="l-menu__item">
                <a href="../company" class="l-menu__link">COMPANY</a>
@@ -147,7 +147,7 @@
                  <a href="../" class="c-breadcrumbs__link">TOP</a>
                </li>
                <li class="c-breadcrumbs__item">
-                 <a href="../company" class="c-breadcrumbs__link" aria-current="page">新着情報</a>
+                 <a href="../contact" class="c-breadcrumbs__link" aria-current="page">お問い合わせ</a>
                </li>
              </ul>
            </div>
@@ -172,7 +172,7 @@
                  <li class="p-contact__progressItem">確認</li>
                  <li class="p-contact__progressItem">完了</li>
                </ul>
-               <div class="l-form">
+               <form class="l-form h-adr">
                  <dl class="l-form__list">
                    <div class="l-form__item">
                      <dt class="l-form__dt">お問い合わせの種別</dt>
@@ -230,7 +230,7 @@
                      <dt class="l-form__dt">郵便番号</dt>
                      <dd class="l-form__dd -zip">
                        <span>
-                         <input type="text" name="郵便番号" placeholder="" required="" class="zip-button" />
+                         <input type="text" name="郵便番号" placeholder="" required="" class="zip-button p-postal-code" />
                        </span>
                      </dd>
                    </div>
@@ -238,7 +238,7 @@
                      <dt class="l-form__dt">都道府県</dt>
                      <dd class="l-form__dd -zip">
                        <span>
-                         <input type="text" name="都道府県" placeholder="" required="" class="" />
+                         <input type="text" name="都道府県" placeholder="" required="" class="p-region" />
                        </span>
                      </dd>
                    </div>
@@ -246,7 +246,7 @@
                      <dt class="l-form__dt">市区町村</dt>
                      <dd class="l-form__dd">
                        <span>
-                         <input type="text" name="市区町村" placeholder="" required="" class="" />
+                         <input type="text" name="市区町村" placeholder="" required="" class="p-locality p-street-address" />
                        </span>
                      </dd>
                    </div>
@@ -254,7 +254,7 @@
                      <dt class="l-form__dt">番地・建物名</dt>
                      <dd class="l-form__dd">
                        <span>
-                         <input type="text" name="番地・建物名" placeholder="" required="" class="" />
+                         <input type="text" name="番地・建物名" placeholder="" required="" class="p-extended-address" />
                        </span>
                      </dd>
                    </div>
@@ -291,7 +291,8 @@
                  <div class="l-form__submit -submit">
                    <input type="submit" value="内容の確認" class="l-form__btn" />
                  </div>
-               </div>
+                 <input type="hidden" class="p-country-name" value="Japan">
+               </form>
              </div>
            </div>
          </section>
@@ -384,13 +385,15 @@
      <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
      <!-- jquery -->
      <script src="../assets/js/jquery-3.6.0.min.js"></script>
-     <script>
-       jQuery(function($) {
-         $('.zip-button').keyup(function() {
-           AjaxZip3.zip2addr('郵便番号', '', '都道府県', '市区町村', '番地・建物名');
-         });
-       });
+     // <script>
+       //   jQuery(function ($) {
+       //     $('.zip-button').keyup(function () {
+       //       AjaxZip3.zip2addr('郵便番号', '', '都道府県', '市区町村', '番地・建物名');
+       //     });
+       //   });
+       // 
      </script>
+     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
    </div>
  </body>
  </html>
