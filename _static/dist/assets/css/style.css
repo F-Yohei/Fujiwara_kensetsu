@@ -1206,6 +1206,19 @@ body.subpage .l-header {
 .l-menu-sub {
   margin: 1.6rem 0 0;
 }
+.l-menu-sub::before {
+  -webkit-transform: translate(-50%, 0%);
+  position: absolute;
+  top: -4.3rem;
+  left: 50%;
+  width: 100%;
+  height: 4.3rem;
+          transform: translate(-50%, 0%);
+  background-color: rgba(0, 0, 0, 0);
+  content: "";
+  cursor: pointer;
+  pointer-events: all;
+}
 .l-menu-sub figure {
   display: none;
 }

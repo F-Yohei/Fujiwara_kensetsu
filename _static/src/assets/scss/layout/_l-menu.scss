@@ -130,6 +130,19 @@
       z-index: 100;
     }
 
+    &::before {
+      position: absolute;
+      top: rem(-43);
+      left: 50%;
+      width: 100%;
+      height: rem(43);
+      transform: translate(-50%, 0%);
+      background-color: rgba(0, 0, 0, 0);
+      content: "";
+      cursor: pointer;
+      pointer-events: all;
+    }
+
     figure {
       display: none;
 
