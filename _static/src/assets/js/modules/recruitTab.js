@@ -4,22 +4,22 @@
 ==============================================================*/
 
 {
-  const menuItems = document.querySelectorAll('.p-recruit-desc__link');
-  const contents = document.querySelectorAll('.p-recruit-desc__content');
+  const menuItems = document.querySelectorAll(".p-recruit-desc__link");
+  const contents = document.querySelectorAll(".p-recruit-desc__content");
 
   menuItems.forEach((clickedItem) => {
-    clickedItem.addEventListener('click', (e) => {
+    clickedItem.addEventListener("click", (e) => {
       e.preventDefault();
 
       menuItems.forEach((item) => {
-        item.classList.remove('is-select');
+        item.classList.remove("is-select");
       });
-      clickedItem.classList.add('is-select');
+      clickedItem.classList.add("is-select");
       contents.forEach((content) => {
-        content.classList.remove('is-select');
+        content.classList.remove("is-select");
       });
       let currentMenu = document.getElementById(clickedItem.dataset.id);
-      currentMenu.classList.add('is-select');
+      currentMenu.classList.add("is-select");
     });
   });
 }

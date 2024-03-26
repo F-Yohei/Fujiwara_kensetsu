@@ -1,9 +1,9 @@
-<% let pageId = 'news'; %> <% let path = jsonData.pages[pageId].path %>
+<% let pageId = 'recruit'; %> <% let path = jsonData.pages[pageId].path %>
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('../common/_head', {pageId:pageId }) %>
 
-<body class="subpage service">
+<body class="subpage">
   <div class="wrap" ontouchstart="">
     <%- include('../common/_header', {pageId:pageId }) %>
     <!-- main -->
@@ -29,7 +29,7 @@
                 <a href="<%= path %>" class="c-breadcrumbs__link">TOP</a>
               </li>
               <li class="c-breadcrumbs__item">
-                <a href="<%= path %>company" class="c-breadcrumbs__link" aria-current="page">新着情報</a>
+                <a href="<%= path %>company" class="c-breadcrumbs__link" aria-current="page">採用情報</a>
               </li>
             </ul>
           </div>
@@ -121,13 +121,13 @@
             <div class="p-recruit-desc__tab">
               <ul class="p-recruit-desc__menu">
                 <li class="p-recruit-desc__item">
-                  <a href="#" data-id="menuId01" class="p-recruit-desc__link is-select">建設業務</a>
+                  <a href="" data-id="menuId01" class="p-recruit-desc__link is-select">建設業務</a>
                 </li>
                 <li class="p-recruit-desc__item">
-                  <a href="#" data-id="menuId02" class="p-recruit-desc__link">事務業務</a>
+                  <a href="" data-id="menuId02" class="p-recruit-desc__link">事務業務</a>
                 </li>
                 <li class="p-recruit-desc__item">
-                  <a href="#" data-id="menuId03" class="p-recruit-desc__link">営業業務</a>
+                  <a href="" data-id="menuId03" class="p-recruit-desc__link">営業業務</a>
                 </li>
               </ul>
               <div id="menuId01" class="p-recruit-desc__content is-select">
