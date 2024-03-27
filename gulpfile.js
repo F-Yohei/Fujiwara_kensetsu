@@ -138,7 +138,7 @@ const tinypng = () => {
     .src(srcPath.img + ".{png,jpg,jpeg}")
     .pipe(
       tinyping({
-        key: "FnQ4v2bqfjq03F1sQNwjTPCMw6jGTl8l", // TinyPNGのAPI Key
+        key: "05mj3wMcdYCFkQMCBZJwVC0mD2r3Fwbb", // TinyPNGのAPI Key
       })
     )
     .pipe(gulp.dest(distPath.img));
