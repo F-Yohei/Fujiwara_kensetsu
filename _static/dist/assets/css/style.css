@@ -2781,8 +2781,10 @@ body.service .c-breadcrumbs {
 .p-works-archive__item:not(:first-child) {
   margin-top: 5.8rem;
 }
-.p-works-archive__item:not(:nth-child(3n)) {
-  margin-right: 4rem;
+@incluude responsive(md) {
+  .p-works-archive__item:not(:nth-child(3n)) {
+    margin-right: 4rem;
+  }
 }
 .p-works-archive__link {
   display: block;
@@ -5173,6 +5175,12 @@ button.swiper-pagination-bullet {
   .c-modal__container {
     width: 50rem;
   }
+  .c-link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.75;
+    letter-spacing: 0.15em;
+  }
   .c-breadcrumbs {
     margin-top: 4.4rem;
   }
@@ -5720,6 +5728,9 @@ button.swiper-pagination-bullet {
     min-width: 280px;
     margin: 0 40px 0 0;
   }
+  .p-company-message figure {
+    width: 46.15%;
+  }
   .p-company-message__inner {
     -webkit-box-pack: justify;
     -webkit-box-orient: horizontal;
@@ -5812,10 +5823,11 @@ button.swiper-pagination-bullet {
     margin-top: 8rem;
   }
   .p-works-archive__list {
+    -webkit-box-pack: justify;
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+            justify-content: space-between;
   }
   .p-works-archive__item {
     width: 30.769%;

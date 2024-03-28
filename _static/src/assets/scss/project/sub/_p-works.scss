@@ -21,7 +21,7 @@
     &__list {
         @include responsive(md) {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
     }
@@ -56,7 +56,9 @@
     }
 
     &__item:not(:nth-child(3n)) {
-        margin-right: rem(40);
+        @incluude responsive(md) {
+            margin-right: rem(40);
+        }
     }
 
     &__link {

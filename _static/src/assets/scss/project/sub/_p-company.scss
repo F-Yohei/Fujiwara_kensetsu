@@ -4,6 +4,9 @@
 
 .p-company-message {
     figure {
+        @include responsive(md) {
+            width: 46.15%;
+        }
         picture {
             img {
                 width: 100%;
