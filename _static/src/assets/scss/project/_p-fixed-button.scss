@@ -29,6 +29,7 @@
     &__link {
         display: block;
         color: #fff;
+        font-family: $font-family-en;
         @include font(16, 18, 600, 100, rem);
         padding: rem(20) 0;
         text-align: center;

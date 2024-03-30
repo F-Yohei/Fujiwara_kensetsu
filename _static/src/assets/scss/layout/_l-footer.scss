@@ -139,6 +139,7 @@
     }
 
     &__policy__link {
+        font-family: $font-family-en;
         @include responsive(md) {
             margin-right: rem(32);
         }

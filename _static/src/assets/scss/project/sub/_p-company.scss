@@ -55,11 +55,11 @@
 .p-company-message__catch {
     color: $color-text;
     font-family: $font-family-base;
-    @include font(20, 28, 500, 150, rem);
+    @include font(20, 28, 400, 150, rem);
     margin-top: rem(29);
 
     @include responsive(md) {
-        @include font(28, 42, 500, 150, rem);
+        @include font(28, 42, 400, 150, rem);
     }
 }
 

@@ -13,7 +13,6 @@
 .p-loop-text {
     display: inline-block;
     color: rgba(0, 0, 0, 0);
-    font-family: $font-family-en;
     @include font(100, 112, 600, 0, rem);
     margin: 0;
     padding-left: 100%;
@@ -24,6 +23,10 @@
 
     @include responsive(md) {
         @include font(180, 207, 600, 0, rem);
+    }
+
+    span {
+        font-family: $font-family-en;
     }
 }
 
