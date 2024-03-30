@@ -102,8 +102,13 @@
     }
 
     figure {
+        height: 272px;
+        overflow: hidden;
+        margin-top: rem(59);
+
         @include responsive(md) {
             height: 382px;
+            margin-top: 0;
             margin-bottom: rem(40);
         }
         iframe {
@@ -111,9 +116,10 @@
         }
     }
 
-    // .l-section__list {
-    //     @include responsive(md) {
-    //         margin-top: rem(40);
-    //     }
-    // }
+    .l-section-list {
+        margin-top: rem(32);
+        @include responsive(md) {
+            margin-top: rem(40);
+        }
+    }
 }

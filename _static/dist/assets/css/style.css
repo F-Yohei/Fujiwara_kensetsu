@@ -2711,8 +2711,16 @@ body.subpage .l-header {
 .p-company-access__inner {
   padding-bottom: 15.2rem;
 }
+.p-company-access__desc figure {
+  height: 272px;
+  margin-top: 5.9rem;
+  overflow: hidden;
+}
 .p-company-access__desc figure iframe {
   width: 100%;
+}
+.p-company-access__desc .l-section-list {
+  margin-top: 3.2rem;
 }
 
 /* service
@@ -5790,7 +5798,11 @@ button.swiper-pagination-bullet {
   }
   .p-company-access__desc figure {
     height: 382px;
+    margin-top: 0;
     margin-bottom: 4rem;
+  }
+  .p-company-access__desc .l-section-list {
+    margin-top: 4rem;
   }
   .p-service__inner {
     max-width: 1200px;
