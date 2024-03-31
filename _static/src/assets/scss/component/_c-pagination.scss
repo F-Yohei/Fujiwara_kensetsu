@@ -26,7 +26,10 @@
         @include font(16, 20, 400, 0, rem);
         width: rem(42);
         padding: rem(12) 0;
-        @include font(20, 20, 400, 0, rem);
+
+        @include responsive(md) {
+            @include font(20, 20, 400, 0, rem);
+        }
 
         &.-current {
             background: $color-accent;
