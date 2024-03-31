@@ -424,8 +424,8 @@
   border: 1px solid #cbcbcb;
   color: #111;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.3333333333;
+  font-size: 2rem;
+  line-height: 1;
   font-family: Arial, "メイリオ", Meiryo, sans-serif;
   letter-spacing: 0em;
   transition: border 0.5s ease;
@@ -2756,6 +2756,10 @@ body.subpage .l-header {
 }
 .p-service__desc .l-section__text {
   color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8666666667;
+  letter-spacing: 0.15em;
 }
 .p-service__desc .c-link__wrap {
   margin-top: 3.2rem;
@@ -2834,13 +2838,9 @@ body.service .c-breadcrumbs {
   background: #88b999;
   color: #fff;
   font-weight: 600;
-  font-weight: 700;
   font-size: 1.2rem;
-  font-size: 1.2rem;
-  line-height: 1.1666666667;
   line-height: 1.5;
   font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.15em;
   letter-spacing: 0.15em;
 }
 .p-works-archive__tag.-archi {
@@ -2952,6 +2952,12 @@ body.service .c-breadcrumbs {
 }
 .p-works-detail__block {
   padding-top: 8.5rem;
+}
+.p-works-detail__block .l-section__text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8666666667;
+  letter-spacing: 0.15em;
 }
 .p-works-detail__blockTitle {
   padding-bottom: 1.6rem;

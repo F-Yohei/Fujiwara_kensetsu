@@ -101,13 +101,12 @@
         display: block;
         background: #88b999;
         color: #fff;
-        @include font(12, 14, 600, 150, rem);
         font-family: $font-family-base;
+        @include font(12, 18, 600, 150, rem);
         padding: rem(12) rem(27);
         position: absolute;
         top: 0;
         right: 0;
-        @include font(12, 18, 700, 150, rem);
 
         &.-archi {
             background-color: $color-accent;

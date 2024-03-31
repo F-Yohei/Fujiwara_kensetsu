@@ -117,6 +117,10 @@
         @include responsive(md) {
             padding-top: rem(160);
         }
+
+        .l-section__text {
+            @include font(15, 28, 400, 150, rem);
+        }
     }
 
     &__blockTitle {

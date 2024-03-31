@@ -56,6 +56,7 @@
 
     .l-section__text {
         color: #fff;
+        @include font(15, 28, 400, 150, rem);
     }
 
     .c-link__wrap {

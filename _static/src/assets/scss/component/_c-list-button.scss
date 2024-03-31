@@ -16,7 +16,7 @@
     border: 1px solid #cbcbcb;
     color: $color-text;
     font-family: $font-family-en;
-    @include font(15, 20, 400, 0, rem);
+    @include font(20, 20, 400, 0, rem);
     padding: rem(20) rem(35);
     transition: border 0.5s ease;
 
