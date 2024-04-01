@@ -180,6 +180,14 @@
             height: 2rem;
         }
     }
+
+    &__relatedTitle {
+        @include font(20, 28, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(36, 42, 600, 0, rem);
+        }
+    }
 }
 
 .url-copied {
