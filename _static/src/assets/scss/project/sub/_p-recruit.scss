@@ -12,14 +12,19 @@
 
     .p-loop-textWrap {
         z-index: 2;
-        top: 13rem;
+        top: 15rem;
         bottom: auto;
 
         @include responsive(md) {
-            top: 20.8rem;
+            top: 25.8rem;
         }
     }
     .p-loop-text {
+        @include font(80, 92, 600, 0, rem);
+
+        @include responsive(md) {
+            @include font(200, 230, 600, 0, rem);
+        }
         span {
             -webkit-text-stroke: 2px $color-accent;
         }
@@ -141,7 +146,15 @@
         margin-top: rem(24);
 
         @include responsive(md) {
-            width: 34.13%;
+            width: 41.13%;
+        }
+
+        .l-section__text {
+            @include font(15, 28, 400, 100, rem);
+
+            @include responsive(md) {
+                @include font(15, 28, 400, 150, rem);
+            }
         }
     }
 
@@ -150,12 +163,6 @@
         margin: rem(112) 0 0;
         overflow: hidden;
     }
-
-    // &__parallax:before {
-    //     display: block;
-    //     padding-top: 62.82%;
-    //     content: "";
-    // }
 }
 
 .p-recruit-faq {
@@ -212,6 +219,7 @@
 
         @include responsive(md) {
             @include font(16, 32, 500, 150, rem);
+            padding: 0 rem(52) 0 rem(65);
         }
 
         .toggle {
@@ -276,6 +284,7 @@
 
         @include responsive(md) {
             @include font(16, 32, 400, 150, rem);
+            padding: 0 rem(52) 0 rem(65);
             margin-top: rem(35);
         }
     }
@@ -361,6 +370,10 @@
         }
         &.is-select {
             display: block;
+        }
+
+        .c-list-button {
+            font-family: $font-family-base;
         }
     }
 

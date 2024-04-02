@@ -3307,8 +3307,14 @@ body.service .c-breadcrumbs {
 }
 .p-recruit-message .p-loop-textWrap {
   z-index: 2;
-  top: 13rem;
+  top: 15rem;
   bottom: auto;
+}
+.p-recruit-message .p-loop-text {
+  font-weight: 600;
+  font-size: 8rem;
+  line-height: 1.15;
+  letter-spacing: 0em;
 }
 .p-recruit-message .p-loop-text span {
   -webkit-text-stroke: 2px #88b999;
@@ -3376,6 +3382,12 @@ body.service .c-breadcrumbs {
 }
 .p-recruit-message__desc {
   margin-top: 2.4rem;
+}
+.p-recruit-message__desc .l-section__text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8666666667;
+  letter-spacing: 0.1em;
 }
 .p-recruit-message__parallax {
   position: relative;
@@ -3528,6 +3540,9 @@ body.service .c-breadcrumbs {
 }
 .p-recruit-desc__content.is-select {
   display: block;
+}
+.p-recruit-desc__content .c-list-button {
+  font-family: "Noto Sans JP", sans-serif;
 }
 .p-recruit-desc__title {
   position: relative;
@@ -6116,7 +6131,13 @@ button.swiper-pagination-bullet {
     padding: 16.5rem 0 19.2rem 0;
   }
   .p-recruit-message .p-loop-textWrap {
-    top: 20.8rem;
+    top: 25.8rem;
+  }
+  .p-recruit-message .p-loop-text {
+    font-weight: 600;
+    font-size: 20rem;
+    line-height: 1.15;
+    letter-spacing: 0em;
   }
   .p-recruit-message__title {
     font-weight: 400;
@@ -6162,7 +6183,13 @@ button.swiper-pagination-bullet {
     width: 46.15%;
   }
   .p-recruit-message__desc {
-    width: 34.13%;
+    width: 41.13%;
+  }
+  .p-recruit-message__desc .l-section__text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8666666667;
+    letter-spacing: 0.15em;
   }
   .p-recruit-faq__list {
     width: 75%;
@@ -6172,6 +6199,7 @@ button.swiper-pagination-bullet {
     padding: 3.5rem 0;
   }
   .p-recruit-faq__title {
+    padding: 0 5.2rem 0 6.5rem;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2;
@@ -6185,6 +6213,7 @@ button.swiper-pagination-bullet {
   }
   .p-recruit-faq__text {
     margin-top: 3.5rem;
+    padding: 0 5.2rem 0 6.5rem;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
