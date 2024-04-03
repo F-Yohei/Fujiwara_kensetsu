@@ -45,10 +45,20 @@
             }
         }
 
+        .select {
+            @include responsive(md) {
+                width: 41.2739%;
+            }
+        }
+
         &.-zip {
             span {
                 input {
                     width: 60.2739%;
+
+                    @include responsive(md) {
+                        width: 41.2739%;
+                    }
                 }
             }
         }
@@ -65,6 +75,10 @@
             display: flex;
             // justify-content: space-between;
             align-items: center;
+
+            @include responsive(md) {
+                margin-top: 0;
+            }
 
             .-flex:not(:last-child) {
                 margin-right: rem(31);

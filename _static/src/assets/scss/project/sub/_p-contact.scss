@@ -13,28 +13,9 @@
         @include responsive(md) {
             max-width: 960px;
         }
-    }
 
-    &__head {
-        &.-notfound {
-            .l-container {
-                padding-top: rem(118);
-                padding-bottom: rem(152);
-
-                .l-section__text {
-                    text-align: center;
-                    @include font(15, 28, 400, 100, rem);
-                }
-            }
-
-            .p-contact__headText {
-                text-align: center;
-                @include font(18, 30, 400, 100, rem);
-
-                @include responsive(md) {
-                    @include font(20, 28, 400, 100, rem);
-                }
-            }
+        .l-section__text {
+            @include font(15, 28, 400, 100, rem);
         }
     }
 
@@ -54,7 +35,7 @@
 
     &__headTitle {
         color: $color-text;
-        font-family: $font-family-base;
+        font-family: $font-family-en;
         @include font(28, 42, 600, 0, rem);
 
         @include responsive(md) {
@@ -106,6 +87,7 @@
 
             @include responsive(md) {
                 margin-top: rem(38);
+                @include font(15, 28, 400, 100, rem);
             }
         }
     }

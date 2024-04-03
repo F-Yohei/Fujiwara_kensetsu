@@ -3637,23 +3637,11 @@ body.service .c-breadcrumbs {
 .p-contact {
   padding: 11.3rem 0 15.2rem 0;
 }
-.p-contact__head.-notfound .l-container {
-  padding-top: 11.8rem;
-  padding-bottom: 15.2rem;
-}
-.p-contact__head.-notfound .l-container .l-section__text {
+.p-contact .l-container .l-section__text {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.8666666667;
   letter-spacing: 0.1em;
-  text-align: center;
-}
-.p-contact__head.-notfound .p-contact__headText {
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
-  letter-spacing: 0.1em;
-  text-align: center;
 }
 .p-contact__headTel {
   margin-top: 4rem;
@@ -3665,7 +3653,7 @@ body.service .c-breadcrumbs {
   font-weight: 600;
   font-size: 2.8rem;
   line-height: 1.5;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: Arial, "メイリオ", Meiryo, sans-serif;
   letter-spacing: 0em;
 }
 .p-contact__headTitle span {
@@ -5438,6 +5426,15 @@ button.swiper-pagination-bullet {
   .l-form__dd {
     width: 69.375%;
   }
+  .l-form__dd .select {
+    width: 41.2739%;
+  }
+  .l-form__dd.-zip span input {
+    width: 41.2739%;
+  }
+  .l-form__dd.-radio {
+    margin-top: 0;
+  }
   .l-form__dd.-radio .-flex:not(:last-child) {
     margin-right: 3.9rem;
   }
@@ -6283,12 +6280,6 @@ button.swiper-pagination-bullet {
   .p-contact .l-container {
     max-width: 960px;
   }
-  .p-contact__head.-notfound .p-contact__headText {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.4;
-    letter-spacing: 0.1em;
-  }
   .p-contact__headTel {
     -webkit-box-pack: justify;
     -webkit-box-align: center;
@@ -6329,6 +6320,10 @@ button.swiper-pagination-bullet {
   }
   .p-contact__lead .l-section__text {
     margin-top: 3.8rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8666666667;
+    letter-spacing: 0.1em;
   }
   .p-contact__progress {
     margin-top: 8.6rem;
