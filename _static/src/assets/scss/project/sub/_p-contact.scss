@@ -19,6 +19,16 @@
         }
     }
 
+    &__headText {
+        font-family: $font-family-base;
+        color: $color-text;
+        @include font(18, 25, 400, 150, rem);
+
+        @include responsive(md) {
+            @include font(20, 25, 400, 150, rem);
+        }
+    }
+
     &__headTel {
         background: #f0f0f0;
         padding: rem(32);

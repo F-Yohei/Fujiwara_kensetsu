@@ -3643,6 +3643,14 @@ body.service .c-breadcrumbs {
   line-height: 1.8666666667;
   letter-spacing: 0.1em;
 }
+.p-contact__headText {
+  color: #111;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.3888888889;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.15em;
+}
 .p-contact__headTel {
   margin-top: 4rem;
   padding: 3.2rem;
@@ -6279,6 +6287,12 @@ button.swiper-pagination-bullet {
   }
   .p-contact .l-container {
     max-width: 960px;
+  }
+  .p-contact__headText {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: 0.15em;
   }
   .p-contact__headTel {
     -webkit-box-pack: justify;
