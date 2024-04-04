@@ -19,6 +19,29 @@
         }
     }
 
+    &__head {
+        &.-notfound {
+            .l-container {
+                padding-top: rem(118);
+                padding-bottom: rem(152);
+
+                .l-section__text {
+                    text-align: center;
+                    @include font(15, 28, 400, 100, rem);
+                }
+            }
+
+            .p-contact__headText {
+                text-align: center;
+                @include font(18, 30, 400, 100, rem);
+
+                @include responsive(md) {
+                    @include font(20, 28, 400, 100, rem);
+                }
+            }
+        }
+    }
+
     &__headText {
         font-family: $font-family-base;
         color: $color-text;

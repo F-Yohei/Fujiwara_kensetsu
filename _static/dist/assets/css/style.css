@@ -3643,6 +3643,24 @@ body.service .c-breadcrumbs {
   line-height: 1.8666666667;
   letter-spacing: 0.1em;
 }
+.p-contact__head.-notfound .l-container {
+  padding-top: 11.8rem;
+  padding-bottom: 15.2rem;
+}
+.p-contact__head.-notfound .l-container .l-section__text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8666666667;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.p-contact__head.-notfound .p-contact__headText {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
 .p-contact__headText {
   color: #111;
   font-weight: 400;
@@ -6287,6 +6305,12 @@ button.swiper-pagination-bullet {
   }
   .p-contact .l-container {
     max-width: 960px;
+  }
+  .p-contact__head.-notfound .p-contact__headText {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
   }
   .p-contact__headText {
     font-weight: 400;
