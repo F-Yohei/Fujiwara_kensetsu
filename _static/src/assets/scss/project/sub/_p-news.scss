@@ -2,6 +2,18 @@
 ----------------------------------------- */
 @use "../../global" as *;
 
+body.news {
+    .l-main {
+        .l-section {
+            .l-section__title {
+                @include responsive(md) {
+                    left: 22.6rem;
+                }
+            }
+        }
+    }
+}
+
 .p-news-archive {
     padding: rem(80) 0 rem(112) 0;
 
@@ -19,6 +31,10 @@
     &__content {
         @include responsive(md) {
             width: 65.38%;
+        }
+
+        .c-pagination {
+            border-top: none;
         }
     }
 
@@ -68,34 +84,41 @@
     }
 
     &__item:first-child {
-        border-top: 1px solid #cbcbcb;
         padding-top: rem(34);
     }
 
     &__link:hover {
         figure {
             img {
-                transform: scale(1.1);
+                @include responsive(md) {
+                    transform: scale(1.1);
+                }
             }
         }
     }
 
     &__link:hover {
         time {
-            color: $color-accent;
+            @include responsive(md) {
+                color: $color-accent;
+            }
         }
     }
 
     &__link:hover {
         .p-news-archive__tag {
-            border: 1px solid $color-accent;
-            color: $color-accent;
+            @include responsive(md) {
+                border: 1px solid $color-accent;
+                color: $color-accent;
+            }
         }
     }
 
     &__link:hover {
         .p-news-archive__title {
-            color: $color-accent;
+            @include responsive(md) {
+                color: $color-accent;
+            }
         }
     }
 
