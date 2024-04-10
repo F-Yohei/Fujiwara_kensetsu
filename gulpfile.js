@@ -35,7 +35,7 @@ const webpackStream = require("webpack-stream"); // gulpでwebpackを使うた�
 const webpackConfig = require("./webpack.config");
 
 // WebPでの画像圧縮
-const tinyping = require("gulp-tinypng-compress");
+// const tinyping = require("gulp-tinypng-compress");
 const webp = require("gulp-webp");
 
 // ejs
@@ -133,16 +133,16 @@ const gulpwebp = () => {
 };
 
 // 画像圧縮
-const tinypng = () => {
-  return gulp
-    .src(srcPath.img + ".{png,jpg,jpeg}")
-    .pipe(
-      tinyping({
-        key: "05mj3wMcdYCFkQMCBZJwVC0mD2r3Fwbb", // TinyPNGのAPI Key
-      })
-    )
-    .pipe(gulp.dest(distPath.img));
-};
+// const tinypng = () => {
+//   return gulp
+//     .src(srcPath.img + ".{png,jpg,jpeg}")
+//     .pipe(
+//       tinyping({
+//         key: "05mj3wMcdYCFkQMCBZJwVC0mD2r3Fwbb", // TinyPNGのAPI Key
+//       })
+//     )
+//     .pipe(gulp.dest(distPath.img));
+// };
 
 // video
 const video = () => {
@@ -244,8 +244,8 @@ const browserSyncReload = (done) => {
 const watchFiles = () => {
   gulp.watch(srcPath.html, gulp.series(html, browserSyncReload));
   gulp.watch(srcPath.scss, gulp.series(cssSass));
-  gulp.watch(srcPath.img, gulp.series(gulpwebp, tinypng, browserSyncReload));
-  gulp.watch(srcPath.img, gulp.series(tinypng, browserSyncReload));
+  // gulp.watch(srcPath.img, gulp.series(gulpwebp, tinypng, browserSyncReload));
+  // gulp.watch(srcPath.img, gulp.series(tinypng, browserSyncReload));
   gulp.watch(srcPath.js, gulp.series(bundleJs, browserSyncReload));
   gulp.watch(srcPath.externaljs, gulp.series(externaljs, browserSyncReload));
   gulp.watch(srcPath.font, gulp.series(font, browserSyncReload));
@@ -261,7 +261,7 @@ exports.default = gulp.series(
   gulp.parallel(
     html,
     cssSass,
-    tinypng,
+    // tinypng,
     gulpwebp,
     video,
     bundleJs,

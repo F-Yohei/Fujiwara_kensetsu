@@ -1031,6 +1031,11 @@ body.subpage .l-header {
   opacity: 1;
 }
 
+body.is-active {
+  height: 100%;
+  overflow: hidden;
+}
+
 .l-header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -3983,7 +3988,7 @@ body.service .c-breadcrumbs {
   -webkit-transition: opacity 1s ease;
   -webkit-transition-delay: 1s;
   -webkit-transform: translate(0%, 0%);
-  z-index: 6;
+  z-index: 2;
   position: absolute;
   right: 3rem;
   bottom: 0;

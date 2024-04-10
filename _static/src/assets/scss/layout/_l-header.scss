@@ -11,6 +11,11 @@ body {
   }
 }
 
+body.is-active {
+  height: 100%;
+  overflow: hidden;
+}
+
 .l-header {
   position: fixed;
   top: 0;
