@@ -2,6 +2,9 @@
 ----------------------------------------- */
 @use "../../global" as *;
 
+.test {
+}
+
 .p-news-detail {
     @include responsive(md) {
         padding: rem(160) 0;
