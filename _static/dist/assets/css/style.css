@@ -366,6 +366,32 @@ body.news .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item .c-breadcrumb
   display: unset;
   line-height: 2;
 }
+body.contact .c-breadcrumbs .l-container {
+  -webkit-box-pack: end;
+  display: -webkit-box;
+  display: flex;
+          justify-content: flex-end;
+}
+body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item {
+  display: unset;
+  position: relative;
+}
+body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item::before {
+  -webkit-transform: translate(0%, -50%);
+  display: block;
+  position: absolute;
+  top: 1.4rem;
+  left: -3rem;
+  margin: 0;
+          transform: translate(0%, -50%);
+}
+body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item:not(:last-child) {
+  margin: 0 4rem 0 0;
+}
+body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item .c-breadcrumbs__link {
+  display: unset;
+  line-height: 2;
+}
 
 .c-breadcrumbs {
   margin-top: 2.4rem;
