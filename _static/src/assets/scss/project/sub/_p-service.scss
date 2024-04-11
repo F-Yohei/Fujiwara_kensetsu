@@ -63,15 +63,3 @@
         margin-top: rem(32);
     }
 }
-
-body.service {
-    .c-breadcrumbs {
-        margin: 0 0 rem(-40) 0;
-        z-index: 100;
-        position: relative;
-
-        @include responsive(md) {
-            margin-top: 0;
-        }
-    }
-}

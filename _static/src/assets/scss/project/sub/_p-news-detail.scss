@@ -1,8 +1,30 @@
 /* news-detail
 ----------------------------------------- */
 @use "../../global" as *;
+// body.news {
+//     .l-main {
+//         .c-breadcrumbs {
+//             .l-container {
+//                 .c-breadcrumbs__list {
+//                     display: block;
+//                     padding: 0 0 0 rem(50);
+
+//                     @include responsive(md) {
+//                         display: flex;
+//                     }
+
+//                     .c-breadcrumbs__item:not(:last-child) {
+//                         margin-right: rem(40);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .p-news-detail {
+    padding: rem(72) 0;
+
     @include responsive(md) {
         padding: rem(160) 0;
     }

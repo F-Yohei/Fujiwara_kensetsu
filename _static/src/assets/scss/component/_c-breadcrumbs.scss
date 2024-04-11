@@ -2,6 +2,52 @@
 ----------------------------------------- */
 @use "../global" as *;
 
+body {
+    &.service {
+        .c-breadcrumbs {
+            position: relative;
+            z-index: 1;
+            margin: 0 0 rem(-40) 0;
+            padding: 0;
+
+            @include responsive(md) {
+                margin: 0 0 rem(-60) 0;
+            }
+        }
+    }
+    &.news {
+        .c-breadcrumbs {
+            .l-container {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .c-breadcrumbs__list {
+                display: block;
+                padding: 0 0 0 rem(50);
+                .c-breadcrumbs__item {
+                    display: unset;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        top: rem(14);
+                        left: rem(-30);
+                        display: block;
+                        margin: 0;
+                        transform: translate(0%, -50%);
+                    }
+                    &:not(:last-child) {
+                        margin: 0 rem(40) 0 0;
+                    }
+                    .c-breadcrumbs__link {
+                        display: unset;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .c-breadcrumbs {
     margin-top: rem(24);
 
@@ -36,7 +82,7 @@
     }
 
     &__link {
-        display: bloc;
+        display: block;
         font-family: $font-family-base;
         @include mfont(14, 12, 20, 400, 150, rem);
 

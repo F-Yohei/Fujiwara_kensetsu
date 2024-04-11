@@ -330,6 +330,43 @@
 
 /* breadcrumbs
 ----------------------------------------- */
+body.service .c-breadcrumbs {
+  z-index: 1;
+  position: relative;
+  margin: 0 0 -4rem 0;
+  padding: 0;
+}
+body.news .c-breadcrumbs .l-container {
+  -webkit-box-pack: end;
+  display: -webkit-box;
+  display: flex;
+          justify-content: flex-end;
+}
+body.news .c-breadcrumbs .c-breadcrumbs__list {
+  display: block;
+  padding: 0 0 0 5rem;
+}
+body.news .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item {
+  display: unset;
+  position: relative;
+}
+body.news .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item::before {
+  -webkit-transform: translate(0%, -50%);
+  display: block;
+  position: absolute;
+  top: 1.4rem;
+  left: -3rem;
+  margin: 0;
+          transform: translate(0%, -50%);
+}
+body.news .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item:not(:last-child) {
+  margin: 0 4rem 0 0;
+}
+body.news .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item .c-breadcrumbs__link {
+  display: unset;
+  line-height: 2;
+}
+
 .c-breadcrumbs {
   margin-top: 2.4rem;
 }
@@ -354,7 +391,7 @@
   content: "";
 }
 .c-breadcrumbs__link {
-  display: bloc;
+  display: block;
   font-weight: 400;
   font-size: max(1.4rem, 12px);
   line-height: 1.4285714286;
@@ -2766,12 +2803,6 @@ body.is-active {
   margin-top: 3.2rem;
 }
 
-body.service .c-breadcrumbs {
-  z-index: 100;
-  position: relative;
-  margin: 0 0 -4rem 0;
-}
-
 /* works
 ----------------------------------------- */
 .p-works-archive {
@@ -3130,6 +3161,9 @@ body.service .c-breadcrumbs {
 
 /* news-detail
 ----------------------------------------- */
+.p-news-detail {
+  padding: 7.2rem 0;
+}
 .p-news-detail .l-container {
   max-width: 1040px;
 }
@@ -5226,6 +5260,9 @@ button.swiper-pagination-bullet {
     line-height: 2.75;
     letter-spacing: 0.15em;
   }
+  body.service .c-breadcrumbs {
+    margin: 0 0 -6rem 0;
+  }
   .c-breadcrumbs {
     margin-top: 4.4rem;
   }
@@ -5876,9 +5913,6 @@ button.swiper-pagination-bullet {
     font-size: 2.8rem;
     line-height: 1.5;
     letter-spacing: 0.15em;
-  }
-  body.service .c-breadcrumbs {
-    margin-top: 0;
   }
   .p-works-archive {
     padding: 18.3rem 0 22.7rem 0;
