@@ -2,6 +2,84 @@
 ----------------------------------------- */
 @use "../global" as *;
 
+body.subpage {
+    .l-main {
+        .l-section__title {
+            @include responsive(md) {
+                position: absolute;
+                top: rem(300);
+                left: rem(120);
+                z-index: 1;
+            }
+
+            @include responsive(lg2) {
+                position: absolute;
+                top: rem(400);
+                left: rem(200);
+            }
+        }
+    }
+}
+
+body.works {
+    .l-main {
+        .l-section__title {
+            @include responsive(lg2) {
+                position: absolute;
+                left: rem(225);
+            }
+        }
+    }
+}
+
+body.news {
+    .l-main {
+        .l-section {
+            .l-section__title {
+                @include responsive(md) {
+                    left: rem(120);
+                }
+
+                @include responsive(lg2) {
+                    left: rem(226);
+                }
+            }
+        }
+    }
+}
+
+body.service {
+    .l-main {
+        .l-section__title {
+            @include responsive(md) {
+                position: absolute;
+                top: rem(240);
+            }
+
+            @include responsive(lg2) {
+                position: absolute;
+                top: rem(300);
+                left: rem(230);
+            }
+        }
+    }
+}
+
+body.notfound {
+    .l-main {
+        .l-section__title {
+            @include responsive(md) {
+                position: absolute;
+                top: rem(240);
+            }
+
+            @include responsive(lg2) {
+                left: rem(228);
+            }
+        }
+    }
+}
+
 .l-section {
     &__title {
         letter-spacing: rem(-4);

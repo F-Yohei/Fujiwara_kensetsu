@@ -2,18 +2,6 @@
 ----------------------------------------- */
 @use "../../global" as *;
 
-body.news {
-    .l-main {
-        .l-section {
-            .l-section__title {
-                @include responsive(md) {
-                    left: 22.6rem;
-                }
-            }
-        }
-    }
-}
-
 .p-news-archive {
     padding: rem(80) 0 rem(112) 0;
 

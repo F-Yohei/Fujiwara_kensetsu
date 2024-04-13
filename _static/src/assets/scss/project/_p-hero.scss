@@ -3,6 +3,7 @@
 @use "../global" as *;
 
 .p-hero {
+    overflow: hidden;
     padding: rem(152) rem(20) 0;
     position: relative;
 
@@ -14,15 +15,6 @@
         padding: 15.2rem 2rem 6rem;
         @include responsive(md) {
             padding: 60.4rem 0 0;
-        }
-    }
-
-    .l-section__title {
-        @include responsive(md) {
-            position: absolute;
-            top: rem(400);
-            left: rem(200);
-            z-index: 1;
         }
     }
 

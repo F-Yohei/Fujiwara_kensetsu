@@ -1453,6 +1453,7 @@ body.is-active {
 
 /* section
 ----------------------------------------- */
+
 .l-section__title {
   position: relative;
   padding: 0 0 0 2rem;
@@ -3121,7 +3122,6 @@ body.is-active {
 
 /* news
 ----------------------------------------- */
-
 .p-news-archive {
   padding: 8rem 0 11.2rem 0;
 }
@@ -3875,6 +3875,7 @@ body.is-active {
 .p-hero {
   position: relative;
   padding: 15.2rem 2rem 0;
+  overflow: hidden;
 }
 .p-hero.-noimg {
   padding: 15.2rem 2rem 6rem;
@@ -5478,6 +5479,23 @@ button.swiper-pagination-bullet {
     pointer-events: none;
     transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
   }
+  body.subpage .l-main .l-section__title {
+    z-index: 1;
+    position: absolute;
+    top: 30rem;
+    left: 12rem;
+  }
+  body.news .l-main .l-section .l-section__title {
+    left: 12rem;
+  }
+  body.service .l-main .l-section__title {
+    position: absolute;
+    top: 24rem;
+  }
+  body.notfound .l-main .l-section__title {
+    position: absolute;
+    top: 24rem;
+  }
   .l-section__title .-jp {
     font-weight: 500;
     font-size: 1.6rem;
@@ -6097,9 +6115,6 @@ button.swiper-pagination-bullet {
   .p-works-detail__otherLink.-housing:hover {
     background-color: #182f20;
   }
-  body.news .l-main .l-section .l-section__title {
-    left: 22.6rem;
-  }
   .p-news-archive {
     padding: 15.2rem 0 18.3rem 0;
   }
@@ -6507,12 +6522,6 @@ button.swiper-pagination-bullet {
   .p-hero.-noimg {
     padding: 60.4rem 0 0;
   }
-  .p-hero .l-section__title {
-    z-index: 1;
-    position: absolute;
-    top: 40rem;
-    left: 20rem;
-  }
   .p-hero figure {
     position: relative;
     width: 73.6%;
@@ -6735,6 +6744,26 @@ button.swiper-pagination-bullet {
   }
   .l-menu-button {
     margin: 0;
+  }
+  body.subpage .l-main .l-section__title {
+    position: absolute;
+    top: 40rem;
+    left: 20rem;
+  }
+  body.works .l-main .l-section__title {
+    position: absolute;
+    left: 22.5rem;
+  }
+  body.news .l-main .l-section .l-section__title {
+    left: 22.6rem;
+  }
+  body.service .l-main .l-section__title {
+    position: absolute;
+    top: 30rem;
+    left: 23rem;
+  }
+  body.notfound .l-main .l-section__title {
+    left: 22.8rem;
   }
   .p-home-catch__text {
     font-weight: 600;
