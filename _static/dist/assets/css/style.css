@@ -418,6 +418,9 @@ body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item::before {
 body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item:not(:last-child) {
   margin: 0 4rem 0 0;
 }
+body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item:last-child .c-breadcrumbs__link {
+  letter-spacing: 0.1rem;
+}
 body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item .c-breadcrumbs__link {
   display: unset;
   line-height: 2;
@@ -5327,6 +5330,9 @@ button.swiper-pagination-bullet {
   }
   body.service .c-breadcrumbs {
     margin: 0 0 -6rem 0;
+  }
+  body.contact .c-breadcrumbs .c-breadcrumbs__list .c-breadcrumbs__item:last-child .c-breadcrumbs__link {
+    letter-spacing: 0.15rem;
   }
   .c-breadcrumbs {
     margin-top: 4.4rem;

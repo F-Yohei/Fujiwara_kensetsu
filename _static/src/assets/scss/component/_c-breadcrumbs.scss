@@ -100,6 +100,16 @@ body {
                     &:not(:last-child) {
                         margin: 0 rem(40) 0 0;
                     }
+
+                    &:last-child {
+                        .c-breadcrumbs__link {
+                            letter-spacing: rem(1);
+
+                            @include responsive(md) {
+                                letter-spacing: rem(1.5);
+                            }
+                        }
+                    }
                     .c-breadcrumbs__link {
                         display: unset;
                         line-height: 2;
