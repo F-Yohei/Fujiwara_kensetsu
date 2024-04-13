@@ -46,7 +46,7 @@
 
   &__item {
     cursor: pointer;
-    padding: rem(16) 0;
+    // padding: rem(16) 0;
     border-bottom: 1px solid $color-line;
 
     @include responsive(lg2) {
@@ -75,6 +75,10 @@
         }
       }
     }
+
+    &.-pulldown {
+      padding-bottom: rem(16);
+    }
   }
   &__item:not(:last-child) {
     @include responsive(lg2) {
@@ -83,8 +87,10 @@
   }
 
   &__link {
+    display: block;
     font-family: $font-family-en;
     @include font(18, 20, 600, 100, rem);
+    padding: rem(16) 0;
 
     @include responsive(lg2) {
       position: relative;
@@ -151,7 +157,7 @@
       }
     }
     &.is-none {
-      @include responsive(md) {
+      @include responsive(lg2) {
         visibility: hidden;
         opacity: 0;
         pointer-events: none;

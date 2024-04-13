@@ -1269,11 +1269,15 @@ body.is-active {
   transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .l-menu__item {
-  padding: 1.6rem 0;
   border-bottom: 1px solid #cbcbcb;
   cursor: pointer;
 }
+.l-menu__item.-pulldown {
+  padding-bottom: 1.6rem;
+}
 .l-menu__link {
+  display: block;
+  padding: 1.6rem 0;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.1111111111;
@@ -5471,13 +5475,6 @@ button.swiper-pagination-bullet {
   .l-header__logo {
     width: 11.8rem;
   }
-  .l-menu-sub.is-none {
-    -webkit-transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
-  }
   body.subpage .l-main .l-section__title {
     z-index: 1;
     position: absolute;
@@ -6674,6 +6671,13 @@ button.swiper-pagination-bullet {
   }
   .l-menu-sub figure {
     display: block;
+  }
+  .l-menu-sub.is-none {
+    -webkit-transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
   }
   .l-menu-sub__list {
     -webkit-box-orient: vertical;
