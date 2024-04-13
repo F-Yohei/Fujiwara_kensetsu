@@ -30,6 +30,9 @@
 
     &__nav {
         @include responsive(md) {
+            width: 30%;
+        }
+        @include responsive(lg2) {
             width: 26.15%;
             margin-top: rem(85);
         }

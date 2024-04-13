@@ -5394,8 +5394,7 @@ button.swiper-pagination-bullet {
             justify-content: space-between;
   }
   .l-footer__nav {
-    width: 26.15%;
-    margin-top: 8.5rem;
+    width: 30%;
   }
   .l-footer__navItem:nth-child(odd) {
     margin: 0 7.2rem 2.4rem 0;
@@ -6588,6 +6587,10 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (min-width: 1025px) {
+  .l-footer__nav {
+    width: 26.15%;
+    margin-top: 8.5rem;
+  }
   .l-hamburger__toggle {
     display: none;
   }
