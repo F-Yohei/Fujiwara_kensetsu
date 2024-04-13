@@ -1456,6 +1456,7 @@ body.is-active {
 .l-section__title {
   position: relative;
   padding: 0 0 0 2rem;
+  letter-spacing: -0.4rem;
 }
 .l-section__title .-jp {
   -webkit-transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
