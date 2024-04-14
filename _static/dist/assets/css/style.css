@@ -5920,20 +5920,15 @@ button.swiper-pagination-bullet {
             justify-content: space-between;
   }
   .p-company-message__inner .message {
-    -webkit-box-align: end;
-    display: -webkit-box;
-    display: flex;
-    right: 1.2rem;
-    bottom: -8.6rem;
-            align-items: end;
+    top: 40.4rem;
+    right: 1.6rem;
     font-weight: 600;
-    font-size: 20rem;
-    line-height: 1.15;
+    font-size: 16rem;
+    line-height: 0.34375;
     letter-spacing: 0.025em;
   }
   .p-company-message__desc {
-    width: 34.13%;
-    margin: -3.4rem 0 0;
+    width: 44%;
   }
   .p-company-message__catch {
     font-weight: 400;
@@ -6800,6 +6795,22 @@ button.swiper-pagination-bullet {
   }
   .p-home-service__descWrapper {
     margin-top: 4.3rem;
+  }
+  .p-company-message__inner .message {
+    -webkit-box-align: end;
+    display: -webkit-box;
+    display: flex;
+    right: 1.2rem;
+    bottom: -8.6rem;
+            align-items: end;
+    font-weight: 600;
+    font-size: 20rem;
+    line-height: 1.15;
+    letter-spacing: 0.025em;
+  }
+  .p-company-message__desc {
+    width: 34.13%;
+    margin: -3.4rem 0 0;
   }
 }
 

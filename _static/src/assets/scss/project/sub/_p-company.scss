@@ -36,6 +36,12 @@
         right: 0;
 
         @include responsive(md) {
+            @include font(160, 55, 600, 25, rem);
+            right: 1.6rem;
+            top: 40.4rem;
+        }
+
+        @include responsive(lg2) {
             display: flex;
             align-items: end;
             right: 1.2rem;
@@ -47,6 +53,9 @@
 
 .p-company-message__desc {
     @include responsive(md) {
+        width: 44%;
+    }
+    @include responsive(lg2) {
         width: 34.13%;
         margin: -3.4rem 0 0;
     }
