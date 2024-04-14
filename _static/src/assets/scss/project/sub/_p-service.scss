@@ -10,6 +10,10 @@
     transform: translate(-50%, -50%);
 
     @include responsive(md) {
+        padding: 0 rem(40);
+    }
+
+    @include responsive(lg2) {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 rem(80);

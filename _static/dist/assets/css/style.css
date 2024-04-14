@@ -5967,9 +5967,7 @@ button.swiper-pagination-bullet {
     margin-top: 4rem;
   }
   .p-service__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 8rem;
+    padding: 0 4rem;
   }
   .p-service__inner .l-container {
     -webkit-box-pack: justify;
@@ -6811,6 +6809,11 @@ button.swiper-pagination-bullet {
   .p-company-message__desc {
     width: 34.13%;
     margin: -3.4rem 0 0;
+  }
+  .p-service__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8rem;
   }
 }
 
