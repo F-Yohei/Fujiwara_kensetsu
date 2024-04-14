@@ -1299,7 +1299,7 @@ body.is-active {
   -webkit-transform-origin: right center;
   display: block;
   position: absolute;
-  bottom: -0.9rem;
+  bottom: 1rem;
   width: 100%;
   height: 1px;
           transform: scaleX(0);
@@ -1316,7 +1316,7 @@ body.is-active {
 .l-menu-sub::before {
   -webkit-transform: translate(-50%, 0%);
   position: absolute;
-  top: -4.3rem;
+  top: -1rem;
   left: 50%;
   width: 100%;
   height: 4.3rem;
