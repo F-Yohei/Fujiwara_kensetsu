@@ -5,6 +5,13 @@ const gulp = require("gulp"); //gulp本体
 // const { src, dest, watch, series, parallel } = require('gulp'); // gulpコマンドの省略
 const del = require("del"); //ファイルの削除
 
+// const plumber = require("gulp-plumber");
+// const notify = require("gulp-notify");
+// const imagemin = require("gulp-imagemin");
+const imageminMozjpeg = require("imagemin-mozjpeg");
+// const pngquant = require("imagemin-pngquant");
+// const del = require("del");
+
 // browser-sync
 const browserSync = require("browser-sync"); //ブラウザリロード
 
@@ -37,6 +44,12 @@ const webpackConfig = require("./webpack.config");
 // WebPでの画像圧縮
 // const tinyping = require("gulp-tinypng-compress");
 const webp = require("gulp-webp");
+
+// 画像を圧縮するプラグインの読み込み
+const imagemin = require("gulp-imagemin");
+const mozjpeg = require("imagemin-mozjpeg");
+const pngquant = require("imagemin-pngquant");
+// const changed = require("gulp-changed");
 
 // ejs
 const ejs = require("gulp-ejs");
@@ -143,6 +156,60 @@ const gulpwebp = () => {
 //     )
 //     .pipe(gulp.dest(distPath.img));
 // };
+
+// import gulp from "gulp";
+// import changed from "gulp-changed";
+
+// import imagemin, { mozjpeg, optipng } from "gulp-imagemin";
+
+// export default () =>
+//   gulp
+//     .src(srcPath.img + ".{png,jpg}")
+//     .pipe(changed("./distImg/"))
+//     .pipe(
+//       imagemin([
+//         mozjpeg({ quality: 85, progressive: true }),
+//         optipng({ optimizationLevel: 5 }),
+//       ])
+//     )
+//     .pipe(gulp.dest(distPath.img));
+
+const imageMinify = () => {
+  return gulp
+    .src(srcPath.img + ".{png,jpg,jpeg,svg}", {
+      since: gulp.lastRun(imageMinify),
+    })
+    .pipe(plumber({ errorHandler: notify.onError("<%= error.message %>") }))
+    .pipe(
+      imagemin([
+        imagemin.gifsicle({ optimizationLevel: 3 }),
+        pngquant({ quality: [0.65, 0.8], speed: 1 }),
+        imageminMozjpeg({
+          quality: 65,
+        }),
+        imagemin.svgo({
+          plugins: [
+            {
+              removeViewBox: false,
+            },
+          ],
+        }),
+      ])
+    )
+    .pipe(gulp.dest(distPath.img));
+};
+
+const cleanImage = () => {
+  return del(distPath.img);
+};
+
+const watch = (done) => {
+  gulp.watch(srcPath.img + ".{png,jpg,jpeg}", imageMinify);
+  done();
+};
+
+exports.watch = watch;
+exports.imagemin = gulp.series(cleanImage, imageMinify);
 
 // video
 const video = () => {

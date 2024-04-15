@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 20 30">
-  <path id="iconmonstr-angel-down-thin" d="M29.056,0,15,17.967.976,0,0,.774,15,20,30,.761Z" transform="translate(0 30) rotate(-90)" fill="#cbcbcb" fill-rule="evenodd"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 20 30"><path d="M0 .944L17.967 15 0 29.024.774 30 20 15 .761 0z" fill="#cbcbcb" fill-rule="evenodd"/></svg>
