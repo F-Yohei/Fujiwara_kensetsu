@@ -1145,7 +1145,7 @@ body.is-active {
   -webkit-transform: translateY(-4rem);
   display: -webkit-box;
   display: flex;
-  z-index: 6;
+  z-index: 7;
   position: fixed;
   top: 0;
   left: 0;
@@ -4090,7 +4090,7 @@ body.is-active {
   -webkit-transition: opacity 1s ease;
   -webkit-transition-delay: 1s;
   -webkit-transform: translate(0%, 0%);
-  z-index: 2;
+  z-index: 6;
   position: absolute;
   right: 3rem;
   bottom: 0;
