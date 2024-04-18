@@ -170,8 +170,15 @@
     &__button a {
         display: block;
         background: $color-text;
+        border: 1px solid $color-text;
         color: #fff;
         @include font(16, 20, 600, 150, rem);
         padding: rem(25) 0;
+        transition: all 0.5s ease;
+    }
+
+    &__button a:hover {
+        background: #fff;
+        color: $color-text;
     }
 }

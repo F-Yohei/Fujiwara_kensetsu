@@ -3840,14 +3840,21 @@ body.is-active {
   text-align: center;
 }
 .p-contact__button a {
+  -webkit-transition: all 0.5s ease;
   display: block;
   padding: 2.5rem 0;
+  border: 1px solid #111;
   background: #111;
   color: #fff;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.25;
   letter-spacing: 0.15em;
+  transition: all 0.5s ease;
+}
+.p-contact__button a:hover {
+  background: #fff;
+  color: #111;
 }
 
 /* privacy
