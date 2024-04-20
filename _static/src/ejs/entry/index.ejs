@@ -9,13 +9,12 @@
     <!-- main -->
     <main id="top" class="l-main">
       <article class="l-section">
-          <div id="js-top" class="p-hero -noimg">
-            <h2 class="l-section__title js-title load">
-              <span class="l-section__titleTextWrap">
-              <span class="l-section__titleText">E</span><span class="l-section__titleText">n</span><span class="l-section__titleText">t</span><span class="l-section__titleText">r</span><span class="l-section__titleText">y</span><span class="l-section__titleText">&nbsp;</span><span class="l-section__titleText">F</span><span class="l-section__titleText">o</span><span class="l-section__titleText">r</span><span class="l-section__titleText">m</span></span
-              ><span class="-jp">エントリーフォーム</span>
-            </h2>
-          </div>
+        <div id="js-top" class="p-hero -noimg">
+          <h2 class="l-section__title js-title load">
+            <span class="l-section__titleTextWrap">
+              <span class="l-section__titleText">E</span><span class="l-section__titleText">n</span><span class="l-section__titleText">t</span><span class="l-section__titleText">r</span><span class="l-section__titleText">y</span><span class="l-section__titleText">&nbsp;</span><span class="l-section__titleText">F</span><span class="l-section__titleText">o</span><span class="l-section__titleText">r</span><span class="l-section__titleText">m</span></span><span class="-jp">エントリーフォーム</span>
+          </h2>
+        </div>
         <nav class="c-breadcrumbs" aria-label="breadcrumb">
           <div class="l-container">
             <ul class="c-breadcrumbs__list">
@@ -88,15 +87,15 @@
                   </div>
                   <div class="l-form__item">
                     <dt class="l-form__dt">郵便番号</dt>
-                    <dd class="l-form__dd -zip">
+                    <dd class="l-form__dd">
                       <span>
-                        <input type="text" name="郵便番号" placeholder="" required="" class="zip-button" />
+                        <input type="text" name="郵便番号" placeholder="" required="" class="zip-button" onKeyUp="AjaxZip3.zip2addr( this, '', '都道府県', '市区町村', 'town' );" />
                       </span>
                     </dd>
                   </div>
                   <div class="l-form__item">
                     <dt class="l-form__dt">都道府県</dt>
-                    <dd class="l-form__dd -zip">
+                    <dd class="l-form__dd">
                       <span>
                         <input type="text" name="都道府県" placeholder="" required="" class="" />
                       </span>

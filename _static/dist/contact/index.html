@@ -170,7 +170,7 @@
                  <li class="p-contact__progressItem">確認</li>
                  <li class="p-contact__progressItem">完了</li>
                </ul>
-               <form class="l-form h-adr">
+               <form class="l-form">
                  <dl class="l-form__list">
                    <div class="l-form__item">
                      <dt class="l-form__dt">お問い合わせの種別</dt>
@@ -228,7 +228,7 @@
                      <dt class="l-form__dt">郵便番号</dt>
                      <dd class="l-form__dd -zip">
                        <span>
-                         <input type="text" name="郵便番号" placeholder="" required="" class="zip-button p-postal-code" />
+                         <input type="text" name="郵便番号" placeholder="" required="" class="zip-button p-postal-code" onKeyUp="AjaxZip3.zip2addr( this, '', '都道府県', '市区町村', 'town' );" />
                        </span>
                      </dd>
                    </div>
@@ -244,7 +244,7 @@
                      <dt class="l-form__dt">市区町村</dt>
                      <dd class="l-form__dd">
                        <span>
-                         <input type="text" name="市区町村" placeholder="" required="" class="p-locality p-street-address" />
+                         <input type="text" name="市区町村" placeholder="" required="" class="p-street-address" />
                        </span>
                      </dd>
                    </div>
@@ -252,7 +252,7 @@
                      <dt class="l-form__dt">番地・建物名</dt>
                      <dd class="l-form__dd">
                        <span>
-                         <input type="text" name="番地・建物名" placeholder="" required="" class="p-extended-address" />
+                         <input type="text" name="番地・建物名" placeholder="" required="" class="" />
                        </span>
                      </dd>
                    </div>
@@ -383,7 +383,7 @@
      <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
      <!-- jquery -->
      <script src="../assets/js/jquery-3.6.0.min.js"></script>
-     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
    </div>
  </body>
  </html>

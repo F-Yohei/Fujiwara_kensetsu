@@ -211,15 +211,15 @@
                    </div>
                    <div class="l-form__item">
                      <dt class="l-form__dt">郵便番号</dt>
-                     <dd class="l-form__dd -zip">
+                     <dd class="l-form__dd">
                        <span>
-                         <input type="text" name="郵便番号" placeholder="" required="" class="zip-button" />
+                         <input type="text" name="郵便番号" placeholder="" required="" class="zip-button" onKeyUp="AjaxZip3.zip2addr( this, '', '都道府県', '市区町村', 'town' );" />
                        </span>
                      </dd>
                    </div>
                    <div class="l-form__item">
                      <dt class="l-form__dt">都道府県</dt>
-                     <dd class="l-form__dd -zip">
+                     <dd class="l-form__dd">
                        <span>
                          <input type="text" name="都道府県" placeholder="" required="" class="" />
                        </span>
@@ -375,7 +375,7 @@
      <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
      <!-- jquery -->
      <script src="../assets/js/jquery-3.6.0.min.js"></script>
-     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
    </div>
  </body>
  </html>
